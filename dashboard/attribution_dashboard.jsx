@@ -1,13 +1,12 @@
-// ─── Attribution & Incrementality Dashboard ──────────────────────────────────
-// NexaShop D2C E-commerce: Multi-Touch Attribution + Causal Incrementality
-// Visual: Report-style, navy + indigo + amber, left sidebar nav
+// ─── Marketing Measurement Framework Dashboard ──────────────────────────────
+// NexaShop: Why MTA Is Broken & How to Build a Measurement System That Works
+// 3-Layer Framework: Platform Signals → Statistical Attribution → Experimental Truth
 
-const { useState, useMemo } = React;
+const { useState } = React;
 const {
   ResponsiveContainer, BarChart, Bar, LineChart, Line, AreaChart, Area,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, Cell, ComposedChart,
-  RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
-  ScatterChart, Scatter, ReferenceLine,
+  ReferenceLine, PieChart, Pie,
 } = Recharts;
 
 // ─── Theme ───────────────────────────────────────────────────────────────────
@@ -33,49 +32,53 @@ const T = {
   violet: "#A78BFA",
 };
 
-// ─── Data (embedded from model outputs) ──────────────────────────────────────
-const ATTRIBUTION = [
-  { channel: "Paid Search", role: "Converter", spend: 540000, lastTouch: 44.8, firstTouch: 15.2, linear: 22.1, markov: 52.7, shapley: 18.7, lastTouchRev: 105800, markovRev: 124500, shapleyRev: 44200 },
-  { channel: "Paid Social", role: "Awareness", spend: 450000, lastTouch: 2.1, firstTouch: 28.4, linear: 18.5, markov: 7.0, shapley: 21.3, lastTouchRev: 4960, markovRev: 16540, shapleyRev: 50300 },
-  { channel: "Display", role: "Awareness", spend: 240000, lastTouch: 0.6, firstTouch: 32.1, linear: 15.8, markov: 4.8, shapley: 19.7, lastTouchRev: 1420, markovRev: 11340, shapleyRev: 46500 },
-  { channel: "Email", role: "Nurture", spend: 75000, lastTouch: 14.7, firstTouch: 5.8, linear: 13.2, markov: 0.0, shapley: 8.7, lastTouchRev: 34700, markovRev: 0, shapleyRev: 20600 },
-  { channel: "Organic Search", role: "Converter", spend: 0, lastTouch: 27.7, firstTouch: 10.5, linear: 17.9, markov: 35.5, shapley: 21.1, lastTouchRev: 65400, markovRev: 83800, shapleyRev: 49800 },
-  { channel: "Referral", role: "Consideration", spend: 120000, lastTouch: 10.1, firstTouch: 8.0, linear: 12.5, markov: 0.0, shapley: 10.5, lastTouchRev: 23870, markovRev: 0, shapleyRev: 24800 },
+// ─── Data ────────────────────────────────────────────────────────────────────
+
+// Platform-reported vs. actual attribution (showing the discrepancy)
+const PLATFORM_VS_ACTUAL = [
+  { channel: "Paid Search", platformCredit: 42, markovCredit: 28, shapleyCredit: 19, platformROAS: 3.2, trueROAS: 1.4 },
+  { channel: "Meta Ads", platformCredit: 35, markovCredit: 8, shapleyCredit: 21, platformROAS: 2.8, trueROAS: 1.1 },
+  { channel: "Display", platformCredit: 8, markovCredit: 5, shapleyCredit: 20, platformROAS: 0.9, trueROAS: 0.7 },
+  { channel: "Email", platformCredit: 12, markovCredit: 0, shapleyCredit: 9, platformROAS: 5.1, trueROAS: 2.3 },
+  { channel: "Organic", platformCredit: 0, markovCredit: 35, shapleyCredit: 21, platformROAS: 0, trueROAS: null },
+  { channel: "Referral", platformCredit: 3, markovCredit: 0, shapleyCredit: 10, platformROAS: 1.5, trueROAS: 0.9 },
 ];
 
-const INCREMENTALITY = {
-  did: { lift: 14.6, pValue: 0.0005, daily: 3769, total30: 565398, ciLow: 1654, ciHigh: 5885, tStat: 3.492 },
-  synthetic: { lift: 12.0, daily: 3283, total30: 492380, rmspe: 1.0, placeboP: 0.000, treatRatio: 13.7 },
-  trueLift: 14.0,
+// 5 attribution models comparison
+const ATTRIBUTION_MODELS = [
+  { channel: "Paid Search", lastClick: 44.8, firstClick: 15.2, linear: 22.1, markov: 28.0, shapley: 18.7 },
+  { channel: "Meta Ads", lastClick: 2.1, firstClick: 28.4, linear: 18.5, markov: 7.8, shapley: 21.3 },
+  { channel: "Display", lastClick: 0.6, firstClick: 32.1, linear: 15.8, markov: 4.8, shapley: 19.7 },
+  { channel: "Email", lastClick: 14.7, firstClick: 5.8, linear: 13.2, markov: 24.2, shapley: 8.7 },
+  { channel: "Organic", lastClick: 27.7, firstClick: 10.5, linear: 17.9, markov: 35.2, shapley: 21.1 },
+  { channel: "Referral", lastClick: 10.1, firstClick: 8.0, linear: 12.5, markov: 0.0, shapley: 10.5 },
+];
+
+// Incrementality results
+const INCR = {
+  did: { lift: 14.6, pValue: 0.0005, daily: 3769, total30: 565398, ciLow: 1654, ciHigh: 5885 },
+  synthetic: { lift: 12.0, daily: 3283, total30: 492380, rmspe: 1.0, placeboP: 0.000 },
 };
 
-// Time series for SC chart (90 days)
+// Synthetic Control time series
 const SC_SERIES = (() => {
-  const treat = [25520,25012,25440,26140,27580,29140,27680,24780,24320,24480,25460,26120,27840,29500,27960,25040,24480,24600,25780,26440,28200,29840,28380,25340,24780,25000,26120,26760,28580,30220,28600,25480,25040,25160,26280,27020,28900,30580,29040,25880,25340,25500,26620,27340,29280,30940,29420,26220,25680,25820,27020,27700,29620,31320,29780,26560,25980,26120,27380,28040,31120,31560,32440,33200,34480,35020,33780,31680,31020,31200,32060,32740,33960,34640,33380,31220,30560,30740,31620,32400,33580,34240,32940,30860,30240,30400,31240,32020,33200,33880];
-  const synth = [25480,25070,25380,26080,27520,29080,27600,24820,24380,24540,25400,26060,27780,29440,27920,25000,24520,24640,25720,26380,28140,29780,28300,25280,24720,24940,26060,26680,28500,30140,28540,25420,24980,25080,26220,26960,28820,30500,28960,25800,25260,25420,26540,27260,29180,30860,29340,26140,25580,25740,26920,27620,29540,31220,29680,26480,25880,26020,27280,27940,27000,27180,27440,27780,28120,28300,27800,27080,26880,26960,27220,27520,27780,28060,27560,26840,26620,26720,26980,27300,27540,27820,27320,26580,26380,26460,26720,27000,27260,27540];
-  return treat.map((t, i) => ({
-    day: i + 1,
-    treatment: t,
-    synthetic: synth[i],
-    gap: t - synth[i],
-    period: i < 60 ? "Pre" : "Post",
-  }));
+  const t = [25520,25012,25440,26140,27580,29140,27680,24780,24320,24480,25460,26120,27840,29500,27960,25040,24480,24600,25780,26440,28200,29840,28380,25340,24780,25000,26120,26760,28580,30220,28600,25480,25040,25160,26280,27020,28900,30580,29040,25880,25340,25500,26620,27340,29280,30940,29420,26220,25680,25820,27020,27700,29620,31320,29780,26560,25980,26120,27380,28040,31120,31560,32440,33200,34480,35020,33780,31680,31020,31200,32060,32740,33960,34640,33380,31220,30560,30740,31620,32400,33580,34240,32940,30860,30240,30400,31240,32020,33200,33880];
+  const s = [25480,25070,25380,26080,27520,29080,27600,24820,24380,24540,25400,26060,27780,29440,27920,25000,24520,24640,25720,26380,28140,29780,28300,25280,24720,24940,26060,26680,28500,30140,28540,25420,24980,25080,26220,26960,28820,30500,28960,25800,25260,25420,26540,27260,29180,30860,29340,26140,25580,25740,26920,27620,29540,31220,29680,26480,25880,26020,27280,27940,27000,27180,27440,27780,28120,28300,27800,27080,26880,26960,27220,27520,27780,28060,27560,26840,26620,26720,26980,27300,27540,27820,27320,26580,26380,26460,26720,27000,27260,27540];
+  return t.map((v, i) => ({ day: i+1, treatment: v, synthetic: s[i], gap: v - s[i] }));
 })();
 
-// Placebo gaps for visualization
-const PLACEBO_RATIOS = [0.92, 1.05, 0.88, 1.15, 0.95, 1.02, 0.78, 1.08, 0.97, 1.12, 0.85, 1.03, 0.91, 0.99, 1.06];
-
-// Channel journey funnel
-const FUNNEL_DATA = [
-  { stage: "Impressions", value: 2800000 },
-  { stage: "Clicks", value: 168000 },
-  { stage: "Sessions", value: 142000 },
-  { stage: "Add to Cart", value: 28400 },
-  { stage: "Conversions", value: 2579 },
+// Decision matrix
+const DECISION_MATRIX = [
+  { scenario: "Always-on paid channels", method: "Markov/Shapley MTA", layer: "L2", timeframe: "Weekly", precision: "Medium", note: "Directional — calibrate with L3 quarterly" },
+  { scenario: "New channel launch", method: "Geo-lift / Holdout", layer: "L3", timeframe: "4–6 weeks", precision: "High", note: "Must isolate effect before scaling" },
+  { scenario: "Brand/TV campaign", method: "Synthetic Control + DiD", layer: "L3", timeframe: "60+30 days", note: "Cannot A/B test at user level" , precision: "High"},
+  { scenario: "Creative/landing page", method: "A/B test (user-level)", layer: "L3", timeframe: "1–2 weeks", precision: "Very high", note: "Randomized — gold standard" },
+  { scenario: "Budget reallocation", method: "MMM + MTA triangulation", layer: "L1+L2", timeframe: "Quarterly", precision: "Medium", note: "Combine macro + micro signals" },
+  { scenario: "Cross-device journeys", method: "Probabilistic matching + holdout", layer: "L2+L3", timeframe: "Ongoing", precision: "Low→High", note: "Apple ATT makes deterministic impossible" },
 ];
 
 // ─── Components ──────────────────────────────────────────────────────────────
-function KPI({ label, value, sub, color }) {
+function KPI(props) {
   return React.createElement("div", {
     className: "rounded-lg border p-4 sm:p-5",
     style: { background: T.surface, borderColor: T.border },
@@ -83,15 +86,15 @@ function KPI({ label, value, sub, color }) {
     React.createElement("div", {
       className: "text-xs font-semibold uppercase tracking-wider mb-1.5",
       style: { color: T.textMuted },
-    }, label),
+    }, props.label),
     React.createElement("div", {
       className: "text-2xl sm:text-3xl font-bold",
-      style: { color: color || T.text },
-    }, value),
-    sub && React.createElement("div", {
+      style: { color: props.color || T.text },
+    }, props.value),
+    props.sub && React.createElement("div", {
       className: "text-xs sm:text-sm mt-1",
       style: { color: T.textDim },
-    }, sub),
+    }, props.sub),
   );
 }
 
@@ -111,7 +114,7 @@ function Section(props) {
 
 function Card(props) {
   return React.createElement("div", {
-    className: `rounded-lg border p-4 sm:p-5 ${props.className || ""}`,
+    className: "rounded-lg border p-4 sm:p-5 " + (props.className || ""),
     style: { background: T.surface, borderColor: T.border },
   }, props.children);
 }
@@ -119,7 +122,7 @@ function Card(props) {
 function Insight(props) {
   return React.createElement("div", {
     className: "rounded-lg p-4 sm:p-5 border mb-4",
-    style: { background: `${props.color}08`, borderColor: `${props.color}25` },
+    style: { background: props.color + "08", borderColor: props.color + "25" },
   },
     React.createElement("div", {
       className: "text-sm font-semibold uppercase tracking-wider mb-2",
@@ -132,46 +135,71 @@ function Insight(props) {
   );
 }
 
-// ─── Attribution Comparison Chart ────────────────────────────────────────────
-function AttributionChart() {
-  const data = ATTRIBUTION.map(ch => ({
-    channel: ch.channel.replace("Organic ", "Org. "),
-    "Last-Touch": ch.lastTouch,
-    "First-Touch": ch.firstTouch,
-    "Markov": ch.markov,
-    "Shapley": ch.shapley,
-  }));
+function LayerBadge(props) {
+  const colors = { L1: T.amber, L2: T.indigo, L3: T.teal };
+  const labels = { L1: "Platform Signal", L2: "Statistical Model", L3: "Experiment" };
+  return React.createElement("span", {
+    className: "inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase",
+    style: { background: colors[props.layer] + "20", color: colors[props.layer] },
+  }, props.layer, " · ", labels[props.layer]);
+}
 
-  return React.createElement(ResponsiveContainer, { width: "100%", height: 320 },
-    React.createElement(BarChart, { data, margin: { top: 10, right: 10, left: 0, bottom: 5 } },
+// ─── Charts ──────────────────────────────────────────────────────────────────
+
+function PlatformDiscrepancyChart() {
+  const data = PLATFORM_VS_ACTUAL.map(ch => ({
+    channel: ch.channel,
+    "Platform Says": ch.platformCredit,
+    "Shapley (Data-Driven)": ch.shapleyCredit,
+  }));
+  return React.createElement(ResponsiveContainer, { width: "100%", height: 280 },
+    React.createElement(BarChart, { data: data, margin: { top: 10, right: 10, left: 0, bottom: 5 } },
       React.createElement(CartesianGrid, { strokeDasharray: "3 3", stroke: T.border }),
       React.createElement(XAxis, { dataKey: "channel", tick: { fontSize: 11, fill: T.textMuted }, interval: 0, angle: -15, textAnchor: "end", height: 50 }),
-      React.createElement(YAxis, { tick: { fontSize: 11, fill: T.textMuted }, tickFormatter: v => `${v}%` }),
-      React.createElement(Tooltip, {
-        contentStyle: { background: T.surface, border: `1px solid ${T.border}`, borderRadius: 8, fontSize: 12 },
-        formatter: (v, name) => [`${v.toFixed(1)}%`, name],
-      }),
+      React.createElement(YAxis, { tick: { fontSize: 11, fill: T.textMuted }, tickFormatter: function(v) { return v + "%"; } }),
+      React.createElement(Tooltip, { contentStyle: { background: T.surface, border: "1px solid " + T.border, borderRadius: 8, fontSize: 12 } }),
       React.createElement(Legend, { wrapperStyle: { fontSize: 11 } }),
-      React.createElement(Bar, { dataKey: "Last-Touch", fill: T.textMuted, radius: [2, 2, 0, 0], barSize: 14 }),
-      React.createElement(Bar, { dataKey: "First-Touch", fill: T.violet, radius: [2, 2, 0, 0], barSize: 14 }),
-      React.createElement(Bar, { dataKey: "Markov", fill: T.indigo, radius: [2, 2, 0, 0], barSize: 14 }),
-      React.createElement(Bar, { dataKey: "Shapley", fill: T.amber, radius: [2, 2, 0, 0], barSize: 14 }),
+      React.createElement(Bar, { dataKey: "Platform Says", fill: T.amber, radius: [2,2,0,0], barSize: 20 }),
+      React.createElement(Bar, { dataKey: "Shapley (Data-Driven)", fill: T.indigo, radius: [2,2,0,0], barSize: 20 }),
     ),
   );
 }
 
-// ─── Synthetic Control Chart ─────────────────────────────────────────────────
+function ModelComparisonChart() {
+  const data = ATTRIBUTION_MODELS.map(function(ch) {
+    return {
+      channel: ch.channel,
+      "Last-Click": ch.lastClick,
+      "First-Click": ch.firstClick,
+      "Linear": ch.linear,
+      "Markov": ch.markov,
+      "Shapley": ch.shapley,
+    };
+  });
+  return React.createElement(ResponsiveContainer, { width: "100%", height: 320 },
+    React.createElement(BarChart, { data: data, margin: { top: 10, right: 10, left: 0, bottom: 5 } },
+      React.createElement(CartesianGrid, { strokeDasharray: "3 3", stroke: T.border }),
+      React.createElement(XAxis, { dataKey: "channel", tick: { fontSize: 11, fill: T.textMuted }, interval: 0, angle: -15, textAnchor: "end", height: 50 }),
+      React.createElement(YAxis, { tick: { fontSize: 11, fill: T.textMuted }, tickFormatter: function(v) { return v + "%"; } }),
+      React.createElement(Tooltip, { contentStyle: { background: T.surface, border: "1px solid " + T.border, borderRadius: 8, fontSize: 12 }, formatter: function(v, name) { return [v.toFixed(1) + "%", name]; } }),
+      React.createElement(Legend, { wrapperStyle: { fontSize: 11 } }),
+      React.createElement(Bar, { dataKey: "Last-Click", fill: T.textMuted, radius: [2,2,0,0], barSize: 12 }),
+      React.createElement(Bar, { dataKey: "First-Click", fill: T.violet, radius: [2,2,0,0], barSize: 12 }),
+      React.createElement(Bar, { dataKey: "Linear", fill: T.cyan, radius: [2,2,0,0], barSize: 12 }),
+      React.createElement(Bar, { dataKey: "Markov", fill: T.indigo, radius: [2,2,0,0], barSize: 12 }),
+      React.createElement(Bar, { dataKey: "Shapley", fill: T.amber, radius: [2,2,0,0], barSize: 12 }),
+    ),
+  );
+}
+
 function SyntheticControlChart() {
-  return React.createElement(ResponsiveContainer, { width: "100%", height: 300 },
+  return React.createElement(ResponsiveContainer, { width: "100%", height: 280 },
     React.createElement(ComposedChart, { data: SC_SERIES, margin: { top: 10, right: 10, left: 0, bottom: 5 } },
       React.createElement(CartesianGrid, { strokeDasharray: "3 3", stroke: T.border }),
-      React.createElement(XAxis, { dataKey: "day", tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: d => d % 10 === 0 ? `D${d}` : "" }),
-      React.createElement(YAxis, { tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: v => `$${(v/1000).toFixed(0)}K` }),
-      React.createElement(Tooltip, {
-        contentStyle: { background: T.surface, border: `1px solid ${T.border}`, borderRadius: 8, fontSize: 12 },
-        formatter: (v, name) => [`$${v.toLocaleString()}`, name],
-      }),
-      React.createElement(ReferenceLine, { x: 60, stroke: T.amber, strokeDasharray: "4 4", label: { value: "TV Launch", fill: T.amber, fontSize: 10, position: "top" } }),
+      React.createElement(XAxis, { dataKey: "day", tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: function(d) { return d % 15 === 0 ? "D" + d : ""; } }),
+      React.createElement(YAxis, { tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: function(v) { return "$" + (v/1000).toFixed(0) + "K"; } }),
+      React.createElement(Tooltip, { contentStyle: { background: T.surface, border: "1px solid " + T.border, borderRadius: 8, fontSize: 12 }, formatter: function(v, name) { return ["$" + v.toLocaleString(), name]; } }),
+      React.createElement(ReferenceLine, { x: 60, stroke: T.amber, strokeDasharray: "4 4", label: { value: "Campaign Launch", fill: T.amber, fontSize: 10, position: "top" } }),
       React.createElement(Line, { type: "monotone", dataKey: "treatment", name: "Treatment (Actual)", stroke: T.indigo, strokeWidth: 2, dot: false }),
       React.createElement(Line, { type: "monotone", dataKey: "synthetic", name: "Synthetic Control", stroke: T.textMuted, strokeWidth: 2, strokeDasharray: "4 4", dot: false }),
       React.createElement(Legend, { wrapperStyle: { fontSize: 11 } }),
@@ -179,117 +207,36 @@ function SyntheticControlChart() {
   );
 }
 
-// ─── Gap (Treatment Effect) Chart ────────────────────────────────────────────
 function GapChart() {
-  return React.createElement(ResponsiveContainer, { width: "100%", height: 180 },
+  return React.createElement(ResponsiveContainer, { width: "100%", height: 160 },
     React.createElement(AreaChart, { data: SC_SERIES, margin: { top: 10, right: 10, left: 0, bottom: 5 } },
       React.createElement(CartesianGrid, { strokeDasharray: "3 3", stroke: T.border }),
-      React.createElement(XAxis, { dataKey: "day", tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: d => d % 15 === 0 ? `D${d}` : "" }),
-      React.createElement(YAxis, { tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: v => `$${(v/1000).toFixed(1)}K` }),
+      React.createElement(XAxis, { dataKey: "day", tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: function(d) { return d % 15 === 0 ? "D" + d : ""; } }),
+      React.createElement(YAxis, { tick: { fontSize: 10, fill: T.textMuted }, tickFormatter: function(v) { return "$" + (v/1000).toFixed(1) + "K"; } }),
       React.createElement(ReferenceLine, { x: 60, stroke: T.amber, strokeDasharray: "4 4" }),
       React.createElement(ReferenceLine, { y: 0, stroke: T.textDim }),
-      React.createElement(Tooltip, {
-        contentStyle: { background: T.surface, border: `1px solid ${T.border}`, borderRadius: 8, fontSize: 12 },
-        formatter: (v) => [`$${v.toLocaleString()}`, "Gap"],
-      }),
-      React.createElement(Area, { type: "monotone", dataKey: "gap", fill: `${T.indigo}30`, stroke: T.indigo, strokeWidth: 1.5 }),
-    ),
-  );
-}
-
-// ─── Credit Shift Visualization ──────────────────────────────────────────────
-function CreditShift() {
-  const data = ATTRIBUTION.map(ch => ({
-    channel: ch.channel,
-    shift: (ch.shapley - ch.lastTouch).toFixed(1),
-    direction: ch.shapley > ch.lastTouch ? "Undervalued" : "Overvalued",
-    color: ch.shapley > ch.lastTouch ? T.green : T.rose,
-  }));
-
-  return React.createElement("div", { className: "space-y-3" },
-    data.map((d, i) => React.createElement("div", { key: i, className: "flex items-center gap-3" },
-      React.createElement("div", {
-        className: "w-28 sm:w-32 text-xs sm:text-sm font-medium truncate",
-        style: { color: T.text },
-      }, d.channel),
-      React.createElement("div", { className: "flex-1 relative h-6 rounded", style: { background: T.surfaceAlt } },
-        React.createElement("div", {
-          className: "absolute top-0 h-full rounded",
-          style: {
-            background: `${d.color}40`,
-            left: d.shift > 0 ? "50%" : `${50 + parseFloat(d.shift)}%`,
-            width: `${Math.abs(parseFloat(d.shift))}%`,
-            maxWidth: "50%",
-          },
-        }),
-        React.createElement("div", {
-          className: "absolute top-0 left-1/2 h-full w-px",
-          style: { background: T.textDim },
-        }),
-      ),
-      React.createElement("div", {
-        className: "w-16 text-right text-xs sm:text-sm font-bold",
-        style: { color: d.color },
-      }, `${d.shift > 0 ? "+" : ""}${d.shift}pp`),
-    )),
-  );
-}
-
-// ─── ROAS Comparison ─────────────────────────────────────────────────────────
-function ROASTable() {
-  const paid = ATTRIBUTION.filter(ch => ch.spend > 0);
-  return React.createElement("div", { className: "overflow-x-auto" },
-    React.createElement("table", { className: "w-full text-sm", style: { minWidth: 500 } },
-      React.createElement("thead", null,
-        React.createElement("tr", { style: { borderBottom: `1px solid ${T.border}` } },
-          ["Channel", "Spend (Q)", "Last-Touch ROAS", "Shapley ROAS", "Delta"].map(h =>
-            React.createElement("th", {
-              key: h,
-              className: "text-left py-2 px-2 font-semibold text-xs uppercase tracking-wider",
-              style: { color: T.textMuted },
-            }, h)
-          ),
-        ),
-      ),
-      React.createElement("tbody", null,
-        paid.map((ch, i) => {
-          const ltRoas = (ch.lastTouchRev / ch.spend * 4).toFixed(2);
-          const shRoas = (ch.shapleyRev / ch.spend * 4).toFixed(2);
-          const delta = (shRoas - ltRoas).toFixed(2);
-          return React.createElement("tr", {
-            key: i,
-            style: { borderBottom: `1px solid ${T.border}` },
-          },
-            React.createElement("td", { className: "py-2.5 px-2 font-medium", style: { color: T.text } }, ch.channel),
-            React.createElement("td", { className: "py-2.5 px-2", style: { color: T.textSec } }, `$${(ch.spend/1000).toFixed(0)}K`),
-            React.createElement("td", { className: "py-2.5 px-2", style: { color: T.textSec } }, `${ltRoas}x`),
-            React.createElement("td", { className: "py-2.5 px-2 font-semibold", style: { color: T.indigo } }, `${shRoas}x`),
-            React.createElement("td", {
-              className: "py-2.5 px-2 font-semibold",
-              style: { color: parseFloat(delta) > 0 ? T.green : T.rose },
-            }, `${delta > 0 ? "+" : ""}${delta}x`),
-          );
-        }),
-      ),
+      React.createElement(Area, { type: "monotone", dataKey: "gap", fill: T.indigo + "30", stroke: T.indigo, strokeWidth: 1.5 }),
     ),
   );
 }
 
 // ─── Main App ────────────────────────────────────────────────────────────────
 function App() {
-  const [page, setPage] = useState("executive");
-  const pages = [
-    { id: "executive", label: "Executive Brief", icon: "◈" },
-    { id: "attribution", label: "Attribution", icon: "◉" },
-    { id: "incrementality", label: "Incrementality", icon: "△" },
-    { id: "recommendations", label: "Actions", icon: "→" },
+  var _useState = useState("problem"), page = _useState[0], setPage = _useState[1];
+
+  var pages = [
+    { id: "problem", label: "The Problem", icon: "⚠" },
+    { id: "models", label: "Attribution Models", icon: "◉" },
+    { id: "experiments", label: "Experiments", icon: "△" },
+    { id: "framework", label: "The Framework", icon: "◈" },
   ];
 
   return React.createElement("div", {
     className: "min-h-screen flex flex-col sm:flex-row",
     style: { background: T.bg, color: T.text },
   },
-    // ─── Sidebar / Top nav ───
+
+    // ─── Sidebar ───
     React.createElement("nav", {
       className: "sm:w-56 sm:min-h-screen border-b sm:border-b-0 sm:border-r flex-shrink-0",
       style: { background: T.sidebar, borderColor: T.border },
@@ -297,262 +244,288 @@ function App() {
       React.createElement("div", { className: "p-4 sm:p-5" },
         React.createElement("div", { className: "flex items-center gap-2 mb-1" },
           React.createElement("div", { className: "w-2 h-2 rounded-full", style: { background: T.indigo } }),
-          React.createElement("span", { className: "text-[10px] font-semibold uppercase tracking-widest", style: { color: T.textMuted } }, "NexaShop"),
+          React.createElement("span", { className: "text-[10px] font-semibold uppercase tracking-widest", style: { color: T.textMuted } }, "NexaShop · $5M Budget"),
         ),
-        React.createElement("h1", { className: "text-base sm:text-lg font-bold hidden sm:block", style: { color: T.text } }, "Attribution & Incrementality"),
+        React.createElement("h1", { className: "text-sm sm:text-base font-bold hidden sm:block mt-1", style: { color: T.text } }, "Marketing Measurement Framework"),
       ),
       React.createElement("div", { className: "flex sm:flex-col gap-1 px-3 pb-3 sm:px-3 overflow-x-auto sm:overflow-visible", style: { WebkitOverflowScrolling: "touch" } },
-        pages.map(p => React.createElement("button", {
-          key: p.id,
-          onClick: () => setPage(p.id),
-          className: `flex items-center gap-2 px-3 py-2 rounded-md text-xs sm:text-sm font-medium whitespace-nowrap transition-all ${page === p.id ? "" : "hover:opacity-80"}`,
-          style: {
-            background: page === p.id ? `${T.indigo}20` : "transparent",
-            color: page === p.id ? T.indigo : T.textMuted,
-            borderLeft: page === p.id ? `2px solid ${T.indigo}` : "2px solid transparent",
-          },
-        }, `${p.icon} ${p.label}`)),
+        pages.map(function(p) {
+          return React.createElement("button", {
+            key: p.id,
+            onClick: function() { setPage(p.id); },
+            className: "flex items-center gap-2 px-3 py-2 rounded-md text-xs sm:text-sm font-medium whitespace-nowrap transition-all " + (page === p.id ? "" : "hover:opacity-80"),
+            style: {
+              background: page === p.id ? T.indigo + "20" : "transparent",
+              color: page === p.id ? T.indigo : T.textMuted,
+              borderLeft: page === p.id ? "2px solid " + T.indigo : "2px solid transparent",
+            },
+          }, p.icon + " " + p.label);
+        }),
       ),
     ),
 
-    // ─── Main content ───
+    // ─── Main ───
     React.createElement("main", { className: "flex-1 p-4 sm:p-8 overflow-x-hidden" },
 
-      // ═══ Executive Brief ═══
-      page === "executive" && React.createElement("div", null,
-        React.createElement("div", { className: "mb-6" },
-          React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "The Attribution Problem"),
-          React.createElement("p", { className: "text-sm sm:text-base leading-relaxed", style: { color: T.textSec } },
-            "NexaShop spends $5M/year on marketing across 6 channels. Under last-click attribution, Paid Search receives 45% of conversion credit — but is it actually driving those conversions, or merely capturing demand created elsewhere?"
+      // ═══ TAB 1: THE PROBLEM ═══
+      page === "problem" && React.createElement("div", null,
+        React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "Why Marketing Attribution Is Broken"),
+        React.createElement("p", { className: "text-sm sm:text-base leading-relaxed mb-6", style: { color: T.textSec } },
+          "In 2025, no single attribution model tells the truth. Privacy restrictions, platform black boxes, and fragmented data mean every number you see is wrong — just in different ways."
+        ),
+
+        React.createElement(Insight, { color: T.rose, title: "The 3 Structural Problems" },
+          React.createElement("div", { className: "space-y-3 mt-2" },
+            React.createElement("div", null,
+              React.createElement("strong", { style: { color: T.amber } }, "1. Privacy killed user-level tracking. "),
+              "Apple ATT opt-in rates are ~25%. That means 75% of iOS journeys are invisible. Cookie deprecation removes another 30-40% of cross-site tracking. You're measuring a minority of behavior and extrapolating to the whole."
+            ),
+            React.createElement("div", null,
+              React.createElement("strong", { style: { color: T.amber } }, "2. Every platform lies (differently). "),
+              "Google claims credit for conversions Meta also claims. Meta's 7-day click window inflates its numbers. TikTok's view-through attribution counts passive scrollers as 'influenced'. The sum of all platform-reported conversions is 2-3x actual conversions."
+            ),
+            React.createElement("div", null,
+              React.createElement("strong", { style: { color: T.amber } }, "3. Models disagree wildly. "),
+              "Last-click gives Paid Search 45% credit. First-click gives Display 32%. Shapley gives everyone ~20%. Which is 'right'? None of them — because attribution is not a measurement problem, it's a counterfactual estimation problem."
+            ),
           ),
         ),
 
-        React.createElement(Insight, { color: T.amber, title: "Why This Matters" },
-          "Last-click attribution systematically over-credits bottom-funnel channels (Search, Email) and under-credits top-funnel (Display, Social). ",
-          "This leads to budget misallocation: awareness channels get starved, pipeline dries up 3–6 months later, and teams blame 'market conditions' for declining growth. ",
-          React.createElement("strong", null, "The real problem is measurement, not marketing."),
+        React.createElement(Section, { title: "Platform-Reported vs. Data-Driven Attribution", sub: "Same campaign, same period. Platform-reported credit (what vendors tell you) vs. Shapley Value (what data says)." },
+          React.createElement(Card, null, React.createElement(PlatformDiscrepancyChart)),
         ),
 
-        React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6" },
-          React.createElement(KPI, { label: "Annual Spend", value: "$5.0M", sub: "Across 6 channels" }),
-          React.createElement(KPI, { label: "Conversions", value: "2,579", sub: "Q4 2024 (90 days)" }),
-          React.createElement(KPI, { label: "Revenue", value: "$236K", sub: "Avg order $85" }),
-          React.createElement(KPI, { label: "Blended ROAS", value: "0.94x", sub: "Below breakeven", color: T.rose }),
+        React.createElement(Insight, { color: T.amber, title: "The Consequence" },
+          "NexaShop was allocating budget based on platform-reported ROAS. Google said Search ROAS was 3.2x. Actual Shapley-based ROAS? 1.4x. ",
+          "Meanwhile, organic content (ROAS: ∞) and referral programs were being starved of investment because they don't show up in platform dashboards. ",
+          React.createElement("strong", null, "The $5M question: how do you make decisions when every data source contradicts the others?"),
         ),
 
-        React.createElement(Section, { title: "Key Finding: Credit Reallocation", sub: "How attribution credit shifts when we move from last-click to data-driven models" },
-          React.createElement(Card, null, React.createElement(CreditShift)),
-        ),
-
-        React.createElement("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-4 mt-6" },
-          React.createElement(Insight, { color: T.green, title: "Undervalued Channels" },
-            React.createElement("strong", null, "Paid Social (+19pp)"), " and ", React.createElement("strong", null, "Display (+19pp)"),
-            " are creating demand that Search captures. Shapley analysis reveals these awareness channels drive 41% of conversion value — vs. 3% under last-click.",
-          ),
-          React.createElement(Insight, { color: T.rose, title: "Overvalued Channels" },
-            React.createElement("strong", null, "Paid Search (-26pp)"), " is claiming credit for conversions initiated by upstream touchpoints. ",
-            "Its true incremental value is still significant (19% Shapley) but far less than the 45% last-click suggests.",
-          ),
-        ),
-
-        React.createElement(Section, { title: "TV Campaign Incrementality", sub: "Geo-lift experiment across 5 treatment DMAs (30-day campaign)" },
-          React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-3" },
-            React.createElement(KPI, { label: "DiD Lift", value: "14.6%", sub: "p = 0.0005", color: T.indigo }),
-            React.createElement(KPI, { label: "Synthetic Control", value: "12.0%", sub: "Placebo p < 0.001", color: T.teal }),
-            React.createElement(KPI, { label: "30-Day Incremental", value: "$529K", sub: "Avg of both methods", color: T.amber }),
-          ),
-        ),
-      ),
-
-      // ═══ Attribution Tab ═══
-      page === "attribution" && React.createElement("div", null,
-        React.createElement("div", { className: "mb-6" },
-          React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "Multi-Touch Attribution Models"),
-          React.createElement("p", { className: "text-sm sm:text-base leading-relaxed", style: { color: T.textSec } },
-            "Five attribution models applied to 50,000 customer journeys (181K touchpoints). Data-driven models (Markov Chain, Shapley Value) reveal the true contribution of each channel by measuring counterfactual impact."
-          ),
-        ),
-
-        React.createElement(Insight, { color: T.indigo, title: "Methodology" },
-          React.createElement("strong", null, "Markov Chain"), " — Models journeys as state transitions. Measures each channel's 'removal effect': how much does overall conversion probability drop if this channel disappears? ",
-          React.createElement("br", null),
-          React.createElement("strong", null, "Shapley Value"), " — Game theory approach. Evaluates every possible ordering of channels and computes each one's marginal contribution. Computationally expensive but theoretically fair.",
-        ),
-
-        React.createElement(Section, { title: "Credit Distribution by Model", sub: "% of total conversions attributed to each channel" },
-          React.createElement(Card, null, React.createElement(AttributionChart)),
-        ),
-
-        React.createElement(Section, { title: "ROAS Under Different Models", sub: "How return on ad spend changes when attribution changes" },
-          React.createElement(Card, null, React.createElement(ROASTable)),
-        ),
-
-        React.createElement(Insight, { color: T.amber, title: "So What?" },
-          "Under last-click, Paid Social shows 0.04x ROAS — a clear 'cut' signal. But Shapley reveals its true ROAS is 0.45x. ",
-          "Still below breakeven, but now the question changes from 'should we cut Social?' to 'how do we optimize Social creative to push ROAS above 1x?'. ",
-          React.createElement("strong", null, "Wrong measurement → wrong decisions → wrong outcomes."),
-        ),
-
-        React.createElement(Section, { title: "Journey Patterns" },
-          React.createElement(Card, null,
-            React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-4 text-center" },
-              React.createElement("div", null,
-                React.createElement("div", { className: "text-2xl font-bold", style: { color: T.indigo } }, "4.2"),
-                React.createElement("div", { className: "text-xs mt-1", style: { color: T.textMuted } }, "Avg touchpoints per conversion"),
+        React.createElement(Section, { title: "The Solution: A 3-Layer Measurement System" },
+          React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-4" },
+            React.createElement(Card, null,
+              React.createElement("div", { className: "text-center" },
+                React.createElement("div", { className: "text-3xl mb-2" }, "📡"),
+                React.createElement("div", { className: "text-sm font-bold mb-1", style: { color: T.amber } }, "Layer 1: Platform Signals"),
+                React.createElement("div", { className: "text-xs", style: { color: T.textSec } }, "Google/Meta/TikTok reported data. Fast but biased. Use as directional hypothesis only."),
               ),
-              React.createElement("div", null,
-                React.createElement("div", { className: "text-2xl font-bold", style: { color: T.amber } }, "73%"),
-                React.createElement("div", { className: "text-xs mt-1", style: { color: T.textMuted } }, "Multi-channel journeys"),
+            ),
+            React.createElement(Card, null,
+              React.createElement("div", { className: "text-center" },
+                React.createElement("div", { className: "text-3xl mb-2" }, "📊"),
+                React.createElement("div", { className: "text-sm font-bold mb-1", style: { color: T.indigo } }, "Layer 2: Statistical Models"),
+                React.createElement("div", { className: "text-xs", style: { color: T.textSec } }, "Markov, Shapley, MMM on your own data. Better but still model-dependent. Use for tactical allocation."),
               ),
-              React.createElement("div", null,
-                React.createElement("div", { className: "text-2xl font-bold", style: { color: T.teal } }, "8.2 days"),
-                React.createElement("div", { className: "text-xs mt-1", style: { color: T.textMuted } }, "Avg consideration window"),
+            ),
+            React.createElement(Card, null,
+              React.createElement("div", { className: "text-center" },
+                React.createElement("div", { className: "text-3xl mb-2" }, "🧪"),
+                React.createElement("div", { className: "text-sm font-bold mb-1", style: { color: T.teal } }, "Layer 3: Experiments"),
+                React.createElement("div", { className: "text-xs", style: { color: T.textSec } }, "Geo-lift, holdout, DiD, A/B tests. Slow but causal. Use to validate and calibrate L1 + L2."),
               ),
             ),
           ),
         ),
       ),
 
-      // ═══ Incrementality Tab ═══
-      page === "incrementality" && React.createElement("div", null,
-        React.createElement("div", { className: "mb-6" },
-          React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "Incrementality Testing"),
-          React.createElement("p", { className: "text-sm sm:text-base leading-relaxed", style: { color: T.textSec } },
-            "Attribution tells you who gets credit. Incrementality tells you what actually works. We ran a geo-lift experiment: TV campaign in 5 DMAs (treatment) vs. 15 DMAs (control) over 30 days."
+      // ═══ TAB 2: ATTRIBUTION MODELS ═══
+      page === "models" && React.createElement("div", null,
+        React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "Layer 2: Statistical Attribution"),
+        React.createElement("p", { className: "text-sm sm:text-base leading-relaxed mb-6", style: { color: T.textSec } },
+          "5 attribution models applied to 50,000 customer journeys (181K touchpoints). Same data, radically different conclusions. This is why no single model should drive your budget decisions."
+        ),
+
+        React.createElement(Insight, { color: T.indigo, title: "What Each Model Assumes" },
+          React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-2 text-xs" },
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.textMuted } }, "Last-Click: "), "Only the final touchpoint matters. Rewards closers, ignores initiators."),
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.textMuted } }, "First-Click: "), "Only the first touchpoint matters. Rewards awareness, ignores nurture."),
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.textMuted } }, "Linear: "), "All touchpoints share equally. Simple but naive — a banner impression ≠ a demo request."),
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.textMuted } }, "Markov Chain: "), "Measures removal effect: what happens if this channel disappears? Data-driven but path-dependent."),
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.textMuted } }, "Shapley Value: "), "Game theory: each channel's marginal contribution across all possible orderings. Fair but expensive."),
           ),
         ),
 
-        React.createElement(Insight, { color: T.teal, title: "Why Geo-Lift?" },
-          "User-level A/B tests can't measure brand/TV impact (everyone in a market sees the ad). Geo-lift solves this by comparing entire markets. ",
-          "We use two methods — Difference-in-Differences (assumes parallel trends) and Synthetic Control (builds a data-driven counterfactual) — and triangulate results.",
+        React.createElement(Section, { title: "Credit Distribution: 5 Models, 6 Channels", sub: "% of total conversions attributed — notice how dramatically credit shifts between models." },
+          React.createElement(Card, null, React.createElement(ModelComparisonChart)),
         ),
 
-        React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6" },
+        React.createElement(Insight, { color: T.amber, title: "Key Insight: The 26-Point Gap" },
+          "Paid Search gets 44.8% credit under last-click but only 18.7% under Shapley — a 26pp gap. That's not a rounding error; it's the difference between '$540K well spent' and '$540K of which $280K is wasted'. ",
+          React.createElement("br", null), React.createElement("br", null),
+          "Conversely, Meta Ads jumps from 2.1% (last-click) to 21.3% (Shapley). Under last-click, you'd cut this channel. Under Shapley, you'd grow it. ",
+          React.createElement("strong", null, "Same data. Opposite decisions."),
+        ),
+
+        React.createElement(Section, { title: "So Which Model Is Right?" },
           React.createElement(Card, null,
-            React.createElement("div", { className: "text-xs font-semibold uppercase tracking-wider mb-3", style: { color: T.textMuted } }, "Difference-in-Differences"),
-            React.createElement("div", { className: "text-3xl font-bold mb-1", style: { color: T.indigo } }, `+${INCREMENTALITY.did.lift}%`),
-            React.createElement("div", { className: "text-sm mb-3", style: { color: T.textSec } }, `$${INCREMENTALITY.did.total30.toLocaleString()} incremental (30 days)`),
-            React.createElement("div", { className: "space-y-1 text-xs", style: { color: T.textMuted } },
-              React.createElement("div", null, `t-stat: ${INCREMENTALITY.did.tStat} · p-value: ${INCREMENTALITY.did.pValue}`),
-              React.createElement("div", null, `95% CI: [$${INCREMENTALITY.did.ciLow.toLocaleString()}, $${INCREMENTALITY.did.ciHigh.toLocaleString()}] /day`),
+            React.createElement("div", { className: "text-sm leading-relaxed", style: { color: T.text } },
+              React.createElement("p", { className: "mb-3" },
+                React.createElement("strong", { style: { color: T.rose } }, "None of them. "),
+                "Every model makes assumptions that distort reality. Last-click ignores causation. Shapley assumes all orderings are equally likely (they're not). Markov is only as good as your tracking coverage."
+              ),
+              React.createElement("p", { className: "mb-3" },
+                React.createElement("strong", { style: { color: T.teal } }, "But together they're useful. "),
+                "When Markov AND Shapley both say Display is undervalued, that's a strong signal. When they disagree (like Email: 24% Markov vs. 9% Shapley), you know you need experimental validation."
+              ),
+              React.createElement("p", null,
+                React.createElement("strong", { style: { color: T.indigo } }, "The practical move: "),
+                "Use multi-model comparison to identify high-confidence signals and high-uncertainty gaps. Then design experiments (Layer 3) specifically to resolve the gaps."
+              ),
             ),
           ),
-          React.createElement(Card, null,
-            React.createElement("div", { className: "text-xs font-semibold uppercase tracking-wider mb-3", style: { color: T.textMuted } }, "Synthetic Control"),
-            React.createElement("div", { className: "text-3xl font-bold mb-1", style: { color: T.teal } }, `+${INCREMENTALITY.synthetic.lift}%`),
-            React.createElement("div", { className: "text-sm mb-3", style: { color: T.textSec } }, `$${INCREMENTALITY.synthetic.total30.toLocaleString()} incremental (30 days)`),
-            React.createElement("div", { className: "space-y-1 text-xs", style: { color: T.textMuted } },
-              React.createElement("div", null, `Pre-period RMSPE: ${INCREMENTALITY.synthetic.rmspe}% (excellent fit)`),
-              React.createElement("div", null, `Placebo p-value: <0.001 · Ratio: ${INCREMENTALITY.synthetic.treatRatio}x`),
+        ),
+      ),
+
+      // ═══ TAB 3: EXPERIMENTS ═══
+      page === "experiments" && React.createElement("div", null,
+        React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "Layer 3: Experimental Validation"),
+        React.createElement("p", { className: "text-sm sm:text-base leading-relaxed mb-6", style: { color: T.textSec } },
+          "Attribution models estimate. Experiments prove. When you can't track individual users (privacy) or when platforms disagree, you need causal evidence. Here's how."
+        ),
+
+        React.createElement(Insight, { color: T.teal, title: "When to Use Each Experimental Method" },
+          React.createElement("div", { className: "space-y-2 mt-2 text-xs" },
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.teal } }, "Geo-Lift (Synthetic Control): "), "For brand/TV campaigns where you can't randomize users. Compare markets with vs. without the campaign. Need 60+ days pre-data."),
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.indigo } }, "Difference-in-Differences: "), "For any market-level intervention. Simpler than Synthetic Control, assumes parallel trends. Better with more treatment/control markets."),
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.amber } }, "Holdout Test: "), "Suppress ads to a random % of users for 2-4 weeks. Measures true incrementality of a single channel. Gold standard but costly (you lose revenue during test)."),
+            React.createElement("div", null, React.createElement("strong", { style: { color: T.violet } }, "A/B Test: "), "User-level randomization for tactics (creative, landing page, bid strategy). Not for channel-level measurement (contamination)."),
+          ),
+        ),
+
+        React.createElement(Section, { title: "Case Study: TV Campaign Geo-Lift", sub: "NexaShop launched TV in 5 DMAs (treatment) vs. 15 DMAs (control). 60 days pre-period, 30 days post." },
+          React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4" },
+            React.createElement(Card, null,
+              React.createElement("div", { className: "text-xs font-semibold uppercase tracking-wider mb-3", style: { color: T.textMuted } }, "Difference-in-Differences"),
+              React.createElement("div", { className: "text-3xl font-bold mb-1", style: { color: T.indigo } }, "+14.6%"),
+              React.createElement("div", { className: "text-sm mb-2", style: { color: T.textSec } }, "$565K incremental (30 days)"),
+              React.createElement("div", { className: "text-xs", style: { color: T.textMuted } }, "p = 0.0005 · 95% CI: [$1,654, $5,885]/day"),
+            ),
+            React.createElement(Card, null,
+              React.createElement("div", { className: "text-xs font-semibold uppercase tracking-wider mb-3", style: { color: T.textMuted } }, "Synthetic Control"),
+              React.createElement("div", { className: "text-3xl font-bold mb-1", style: { color: T.teal } }, "+12.0%"),
+              React.createElement("div", { className: "text-sm mb-2", style: { color: T.textSec } }, "$492K incremental (30 days)"),
+              React.createElement("div", { className: "text-xs", style: { color: T.textMuted } }, "Pre-fit RMSPE: 1.0% · Placebo p < 0.001"),
             ),
           ),
         ),
 
-        React.createElement(Section, { title: "Treatment vs. Synthetic Control", sub: "Avg daily revenue per treatment DMA. Dashed = counterfactual (what would have happened without TV)." },
+        React.createElement(Section, { title: "Treatment vs. Synthetic Control", sub: "Solid = actual treatment market revenue. Dashed = data-driven counterfactual (what would have happened without TV)." },
           React.createElement(Card, null, React.createElement(SyntheticControlChart)),
         ),
 
-        React.createElement(Section, { title: "Treatment Effect (Gap)", sub: "Difference between actual and synthetic. Pre-period gap should be ~0 (validates the model)." },
+        React.createElement(Section, { title: "Treatment Effect Over Time", sub: "Gap between actual and counterfactual. Pre-period gap ≈ 0 validates the model. Post-period divergence = causal effect." },
           React.createElement(Card, null, React.createElement(GapChart)),
         ),
 
-        React.createElement(Insight, { color: T.amber, title: "Triangulation" },
-          "Both methods converge on a 12–15% lift range. DiD gives a slightly higher estimate (14.6%) because it doesn't perfectly control for differential trends. ",
-          "Synthetic Control's 12.0% is more conservative and arguably more reliable given the excellent pre-period fit (1.0% RMSPE). ",
-          React.createElement("strong", null, "Recommendation: use the midpoint (13.3%) for planning, with the SC estimate as the floor."),
+        React.createElement(Insight, { color: T.amber, title: "Why Two Methods?" },
+          "Triangulation. DiD assumes parallel trends (simple, interpretable). Synthetic Control builds a custom counterfactual (flexible, less assumption-dependent). ",
+          "When both converge on 12-15% lift, confidence is high. When they diverge, you investigate further. ",
+          React.createElement("strong", null, "Never trust a single estimator for a $500K decision."),
         ),
       ),
 
-      // ═══ Recommendations Tab ═══
-      page === "recommendations" && React.createElement("div", null,
-        React.createElement("div", { className: "mb-6" },
-          React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "Strategic Recommendations"),
-          React.createElement("p", { className: "text-sm sm:text-base leading-relaxed", style: { color: T.textSec } },
-            "Based on attribution reallocation and incrementality evidence, here's the action plan for Q1 2025."
+      // ═══ TAB 4: THE FRAMEWORK ═══
+      page === "framework" && React.createElement("div", null,
+        React.createElement("h1", { className: "text-2xl sm:text-3xl font-bold mb-2" }, "The Measurement Framework"),
+        React.createElement("p", { className: "text-sm sm:text-base leading-relaxed mb-6", style: { color: T.textSec } },
+          "No single method solves attribution. The answer is a systematic framework where each layer compensates for the others' weaknesses."
+        ),
+
+        React.createElement(Insight, { color: T.indigo, title: "How the 3 Layers Work Together" },
+          React.createElement("div", { className: "space-y-3 mt-2" },
+            React.createElement("div", null,
+              React.createElement(LayerBadge, { layer: "L1" }), " ",
+              React.createElement("strong", null, "Platform data tells you WHERE to look. "),
+              "Google says Search ROAS dropped 30% last month. That's a signal — maybe true, maybe an attribution window change. It generates the hypothesis."
+            ),
+            React.createElement("div", null,
+              React.createElement(LayerBadge, { layer: "L2" }), " ",
+              React.createElement("strong", null, "Statistical models tell you HOW MUCH to believe. "),
+              "Run Markov + Shapley on your first-party data. If they confirm Search is weakening, confidence grows. If they disagree with Google, the platform is probably wrong."
+            ),
+            React.createElement("div", null,
+              React.createElement(LayerBadge, { layer: "L3" }), " ",
+              React.createElement("strong", null, "Experiments tell you THE TRUTH. "),
+              "Run a holdout test on Search for 2 weeks. Suppress ads to 10% of users. If conversions barely drop, Search was capturing demand, not creating it. Now you know."
+            ),
           ),
         ),
 
-        React.createElement(Insight, { color: T.indigo, title: "Action 1: Rebalance Channel Budget" },
-          React.createElement("div", { className: "space-y-2" },
-            React.createElement("p", null, "Shapley attribution reveals Paid Social and Display are undervalued by 19pp each. Reallocate 20% of Paid Search budget ($108K/Q) to these channels:"),
-            React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3" },
-              React.createElement("div", { className: "rounded p-3", style: { background: T.surfaceAlt } },
-                React.createElement("div", { className: "text-xs font-semibold mb-1", style: { color: T.rose } }, "Reduce"),
-                React.createElement("div", { className: "text-sm", style: { color: T.text } }, "Paid Search: $540K → $432K (-20%)"),
-              ),
-              React.createElement("div", { className: "rounded p-3", style: { background: T.surfaceAlt } },
-                React.createElement("div", { className: "text-xs font-semibold mb-1", style: { color: T.green } }, "Increase"),
-                React.createElement("div", { className: "text-sm", style: { color: T.text } }, "Paid Social: $450K → $504K (+12%)"),
-                React.createElement("div", { className: "text-sm", style: { color: T.text } }, "Display: $240K → $294K (+22%)"),
+        React.createElement(Section, { title: "Decision Matrix: What Method for What Question", sub: "A practical guide for choosing the right measurement approach" },
+          React.createElement(Card, null,
+            React.createElement("div", { className: "overflow-x-auto" },
+              React.createElement("table", { className: "w-full text-xs sm:text-sm", style: { minWidth: 640 } },
+                React.createElement("thead", null,
+                  React.createElement("tr", { style: { borderBottom: "1px solid " + T.border } },
+                    ["Scenario", "Method", "Layer", "Timeline", "Precision"].map(function(h) {
+                      return React.createElement("th", { key: h, className: "text-left py-2 px-2 font-semibold text-xs uppercase tracking-wider", style: { color: T.textMuted } }, h);
+                    }),
+                  ),
+                ),
+                React.createElement("tbody", null,
+                  DECISION_MATRIX.map(function(row, i) {
+                    return React.createElement("tr", { key: i, style: { borderBottom: "1px solid " + T.border } },
+                      React.createElement("td", { className: "py-2.5 px-2 font-medium", style: { color: T.text } }, row.scenario),
+                      React.createElement("td", { className: "py-2.5 px-2", style: { color: T.textSec } }, row.method),
+                      React.createElement("td", { className: "py-2.5 px-2" }, React.createElement(LayerBadge, { layer: row.layer.split("+")[0] })),
+                      React.createElement("td", { className: "py-2.5 px-2", style: { color: T.textSec } }, row.timeframe),
+                      React.createElement("td", { className: "py-2.5 px-2", style: { color: T.textSec } }, row.precision),
+                    );
+                  }),
+                ),
               ),
             ),
-            React.createElement("p", { className: "text-xs mt-2", style: { color: T.textMuted } }, "Expected impact: +8–12% total conversions at same spend level based on Shapley-optimal allocation."),
           ),
         ),
 
-        React.createElement(Insight, { color: T.teal, title: "Action 2: Scale TV Campaign Nationally" },
-          React.createElement("div", { className: "space-y-2" },
-            React.createElement("p", null, "Geo-lift confirmed 12–15% incremental lift in treatment markets. At $2.1M TV spend across 5 DMAs:"),
+        React.createElement(Insight, { color: T.teal, title: "The Calibration Loop" },
+          React.createElement("div", { className: "space-y-2 mt-2" },
+            React.createElement("p", null,
+              "The framework isn't static. It's a continuous calibration loop:"
+            ),
             React.createElement("div", { className: "rounded p-3 mt-2", style: { background: T.surfaceAlt } },
-              React.createElement("div", { className: "grid grid-cols-2 sm:grid-cols-4 gap-3 text-center" },
+              React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-4 gap-3 text-center text-xs" },
                 React.createElement("div", null,
-                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.teal } }, "$6.3M"),
-                  React.createElement("div", { className: "text-xs", style: { color: T.textMuted } }, "Annual incremental (5 DMAs)"),
+                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.amber } }, "Q1"),
+                  React.createElement("div", { style: { color: T.textSec } }, "Set budget using L2 models"),
                 ),
                 React.createElement("div", null,
-                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.amber } }, "3.0x"),
-                  React.createElement("div", { className: "text-xs", style: { color: T.textMuted } }, "iROAS"),
+                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.indigo } }, "Q2"),
+                  React.createElement("div", { style: { color: T.textSec } }, "Run holdout tests on top 3 channels"),
                 ),
                 React.createElement("div", null,
-                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.indigo } }, "$18.9M"),
-                  React.createElement("div", { className: "text-xs", style: { color: T.textMuted } }, "Est. national (15 DMAs)"),
+                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.teal } }, "Q3"),
+                  React.createElement("div", { style: { color: T.textSec } }, "Calibrate L2 with L3 results"),
                 ),
                 React.createElement("div", null,
-                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.green } }, "2.4x"),
-                  React.createElement("div", { className: "text-xs", style: { color: T.textMuted } }, "Est. national iROAS"),
+                  React.createElement("div", { className: "text-lg font-bold", style: { color: T.green } }, "Q4"),
+                  React.createElement("div", { style: { color: T.textSec } }, "Reallocate with calibrated model"),
                 ),
               ),
             ),
-            React.createElement("p", { className: "text-xs mt-2", style: { color: T.textMuted } }, "Recommendation: Expand to 10 additional DMAs in Q2. Hold back 5 as ongoing control for measurement."),
-          ),
-        ),
-
-        React.createElement(Insight, { color: T.amber, title: "Action 3: Fix Measurement Infrastructure" },
-          React.createElement("div", { className: "space-y-2" },
-            React.createElement("p", null, "The 26pp gap between last-click and Shapley for Paid Search means the team has been making decisions based on fundamentally wrong data. Fixes needed:"),
-            React.createElement("ul", { className: "list-none space-y-1.5 mt-2" },
-              React.createElement("li", null, "▸ ", React.createElement("strong", null, "Replace last-click"), " with Markov Chain as the primary attribution model in BI dashboards"),
-              React.createElement("li", null, "▸ ", React.createElement("strong", null, "Implement holdout-based incrementality"), " for each channel quarterly (dark traffic tests)"),
-              React.createElement("li", null, "▸ ", React.createElement("strong", null, "Server-side tracking"), " to capture cross-device journeys lost to cookie deprecation"),
-              React.createElement("li", null, "▸ ", React.createElement("strong", null, "Unified measurement framework"), ": MMM (long-term) + MTA (tactical) + Incrementality (validation)"),
+            React.createElement("p", { className: "mt-3" },
+              "Each cycle makes your models more accurate. After 2-3 cycles, your L2 attribution becomes ",
+              React.createElement("strong", null, "experimentally validated"), " — not just 'a model' but a proven decision tool."
             ),
           ),
         ),
 
         React.createElement(Section, { title: "Projected Impact" },
           React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-4" },
-            React.createElement(Card, null,
-              React.createElement("div", { className: "text-center" },
-                React.createElement("div", { className: "text-3xl font-bold", style: { color: T.green } }, "+$2.8M"),
-                React.createElement("div", { className: "text-xs mt-1", style: { color: T.textMuted } }, "Annual revenue from reallocation"),
-              ),
-            ),
-            React.createElement(Card, null,
-              React.createElement("div", { className: "text-center" },
-                React.createElement("div", { className: "text-3xl font-bold", style: { color: T.indigo } }, "+$18.9M"),
-                React.createElement("div", { className: "text-xs mt-1", style: { color: T.textMuted } }, "Annual TV contribution (national)"),
-              ),
-            ),
-            React.createElement(Card, null,
-              React.createElement("div", { className: "text-center" },
-                React.createElement("div", { className: "text-3xl font-bold", style: { color: T.amber } }, "1.4x → 2.1x"),
-                React.createElement("div", { className: "text-xs mt-1", style: { color: T.textMuted } }, "Blended ROAS improvement"),
-              ),
-            ),
+            React.createElement(KPI, { label: "Budget Reallocation", value: "+$2.8M", sub: "Annual revenue from correcting misattribution", color: T.green }),
+            React.createElement(KPI, { label: "TV Incremental (validated)", value: "$6.3M", sub: "Annual — confirmed via geo-lift", color: T.indigo }),
+            React.createElement(KPI, { label: "Measurement Confidence", value: "3x", sub: "From 'gut + last-click' to calibrated framework", color: T.amber }),
           ),
         ),
-      ),
 
+        React.createElement(Insight, { color: T.indigo, title: "Bottom Line" },
+          "The goal isn't perfect attribution — it's making ",
+          React.createElement("strong", null, "better decisions faster"),
+          ". A 3-layer framework won't give you a single 'true ROAS' number. But it will tell you: ",
+          React.createElement("em", null, "which channels are definitely working, which are definitely not, and which need more evidence before you scale."),
+          " That's the difference between guessing and deciding.",
+        ),
+      ),
     ),
 
     // Footer
@@ -563,5 +536,5 @@ function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+var root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(React.createElement(App));
