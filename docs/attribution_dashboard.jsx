@@ -340,7 +340,7 @@ function App() {
           React.createElement(KPI, { label: "Blended ROAS", value: "0.94x", sub: "Below breakeven", color: T.rose }),
         ),
 
-        Section({ title: "Key Finding: Credit Reallocation", sub: "How attribution credit shifts when we move from last-click to data-driven models" },
+        React.createElement(Section, { title: "Key Finding: Credit Reallocation", sub: "How attribution credit shifts when we move from last-click to data-driven models" },
           React.createElement(Card, null, React.createElement(CreditShift)),
         ),
 
@@ -355,7 +355,7 @@ function App() {
           ),
         ),
 
-        Section({ title: "TV Campaign Incrementality", sub: "Geo-lift experiment across 5 treatment DMAs (30-day campaign)" },
+        React.createElement(Section, { title: "TV Campaign Incrementality", sub: "Geo-lift experiment across 5 treatment DMAs (30-day campaign)" },
           React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-3" },
             React.createElement(KPI, { label: "DiD Lift", value: "14.6%", sub: "p = 0.0005", color: T.indigo }),
             React.createElement(KPI, { label: "Synthetic Control", value: "12.0%", sub: "Placebo p < 0.001", color: T.teal }),
@@ -379,11 +379,11 @@ function App() {
           React.createElement("strong", null, "Shapley Value"), " — Game theory approach. Evaluates every possible ordering of channels and computes each one's marginal contribution. Computationally expensive but theoretically fair.",
         ),
 
-        Section({ title: "Credit Distribution by Model", sub: "% of total conversions attributed to each channel" },
+        React.createElement(Section, { title: "Credit Distribution by Model", sub: "% of total conversions attributed to each channel" },
           React.createElement(Card, null, React.createElement(AttributionChart)),
         ),
 
-        Section({ title: "ROAS Under Different Models", sub: "How return on ad spend changes when attribution changes" },
+        React.createElement(Section, { title: "ROAS Under Different Models", sub: "How return on ad spend changes when attribution changes" },
           React.createElement(Card, null, React.createElement(ROASTable)),
         ),
 
@@ -393,7 +393,7 @@ function App() {
           React.createElement("strong", null, "Wrong measurement → wrong decisions → wrong outcomes."),
         ),
 
-        Section({ title: "Journey Patterns" },
+        React.createElement(Section, { title: "Journey Patterns" },
           React.createElement(Card, null,
             React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-4 text-center" },
               React.createElement("div", null,
@@ -448,11 +448,11 @@ function App() {
           ),
         ),
 
-        Section({ title: "Treatment vs. Synthetic Control", sub: "Avg daily revenue per treatment DMA. Dashed = counterfactual (what would have happened without TV)." },
+        React.createElement(Section, { title: "Treatment vs. Synthetic Control", sub: "Avg daily revenue per treatment DMA. Dashed = counterfactual (what would have happened without TV)." },
           React.createElement(Card, null, React.createElement(SyntheticControlChart)),
         ),
 
-        Section({ title: "Treatment Effect (Gap)", sub: "Difference between actual and synthetic. Pre-period gap should be ~0 (validates the model)." },
+        React.createElement(Section, { title: "Treatment Effect (Gap)", sub: "Difference between actual and synthetic. Pre-period gap should be ~0 (validates the model)." },
           React.createElement(Card, null, React.createElement(GapChart)),
         ),
 
@@ -529,7 +529,7 @@ function App() {
           ),
         ),
 
-        Section({ title: "Projected Impact" },
+        React.createElement(Section, { title: "Projected Impact" },
           React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-3 gap-4" },
             React.createElement(Card, null,
               React.createElement("div", { className: "text-center" },
