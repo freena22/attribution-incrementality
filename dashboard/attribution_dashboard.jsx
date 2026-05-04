@@ -95,40 +95,40 @@ function KPI({ label, value, sub, color }) {
   );
 }
 
-function Section({ title, sub, children }) {
+function Section(props) {
   return React.createElement("div", { className: "mb-8 sm:mb-10" },
     React.createElement("h2", {
       className: "text-xl sm:text-2xl font-bold mb-1",
       style: { color: T.text },
-    }, title),
-    sub && React.createElement("p", {
+    }, props.title),
+    props.sub && React.createElement("p", {
       className: "text-sm mb-4",
       style: { color: T.textSec },
-    }, sub),
-    children,
+    }, props.sub),
+    props.children,
   );
 }
 
-function Card({ children, className = "" }) {
+function Card(props) {
   return React.createElement("div", {
-    className: `rounded-lg border p-4 sm:p-5 ${className}`,
+    className: `rounded-lg border p-4 sm:p-5 ${props.className || ""}`,
     style: { background: T.surface, borderColor: T.border },
-  }, children);
+  }, props.children);
 }
 
-function Insight({ color, title, children }) {
+function Insight(props) {
   return React.createElement("div", {
     className: "rounded-lg p-4 sm:p-5 border mb-4",
-    style: { background: `${color}08`, borderColor: `${color}25` },
+    style: { background: `${props.color}08`, borderColor: `${props.color}25` },
   },
     React.createElement("div", {
       className: "text-sm font-semibold uppercase tracking-wider mb-2",
-      style: { color },
-    }, title),
+      style: { color: props.color },
+    }, props.title),
     React.createElement("div", {
       className: "text-sm leading-relaxed",
       style: { color: T.text },
-    }, children),
+    }, props.children),
   );
 }
 
