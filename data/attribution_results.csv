@@ -1,0 +1,7 @@
+channel,role,quarterly_spend,last_touch_conv,last_touch_rev,first_touch_conv,first_touch_rev,linear_conv,linear_rev,markov_conv,markov_rev,shapley_conv,shapley_rev,last_touch_roas,first_touch_roas,linear_roas,markov_roas,shapley_roas
+Paid Search,converter,540000,1156.0,105701.0,230.0,20980.0,510.2,46567.0,1359.7,124505.0,482.0,44133.0,0.2,0.04,0.09,0.23,0.08
+Paid Social,awareness,450000,54.0,4981.0,318.0,29086.0,174.6,15950.0,181.2,16588.0,548.6,50237.0,0.01,0.06,0.04,0.04,0.11
+Display,awareness,240000,16.0,1780.0,107.0,10151.0,46.9,4685.0,124.2,11369.0,507.8,46495.0,0.01,0.04,0.02,0.05,0.19
+Email,nurture,75000,378.0,34323.0,808.0,73887.0,752.4,68885.0,0.0,0.0,224.9,20592.0,0.46,0.99,0.92,0.0,0.27
+Organic Search,converter,0,714.0,65556.0,258.0,24328.0,434.3,39919.0,913.9,83687.0,544.0,49808.0,,,,,
+Referral,consideration,120000,261.0,23809.0,858.0,77718.0,660.5,60144.0,0.0,0.0,271.8,24885.0,0.2,0.65,0.5,0.0,0.21

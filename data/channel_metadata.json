@@ -1,0 +1,32 @@
+{
+  "Paid Search": {
+    "role": "converter",
+    "monthly_spend": 180000,
+    "quarterly_spend": 540000
+  },
+  "Paid Social": {
+    "role": "awareness",
+    "monthly_spend": 150000,
+    "quarterly_spend": 450000
+  },
+  "Display": {
+    "role": "awareness",
+    "monthly_spend": 80000,
+    "quarterly_spend": 240000
+  },
+  "Email": {
+    "role": "nurture",
+    "monthly_spend": 25000,
+    "quarterly_spend": 75000
+  },
+  "Organic Search": {
+    "role": "converter",
+    "monthly_spend": 0,
+    "quarterly_spend": 0
+  },
+  "Referral": {
+    "role": "consideration",
+    "monthly_spend": 40000,
+    "quarterly_spend": 120000
+  }
+}

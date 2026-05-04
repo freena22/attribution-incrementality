@@ -1,0 +1,1801 @@
+dma_id,dma_name,group,day,period,daily_revenue,daily_orders,true_lift_pct
+DMA_01,Los Angeles,treatment,0,pre,38296.71,471,0.0
+DMA_01,Los Angeles,treatment,1,pre,38108.13,444,0.0
+DMA_01,Los Angeles,treatment,2,pre,37935.5,413,0.0
+DMA_01,Los Angeles,treatment,3,pre,41705.66,476,0.0
+DMA_01,Los Angeles,treatment,4,pre,42831.38,517,0.0
+DMA_01,Los Angeles,treatment,5,pre,47867.74,542,0.0
+DMA_01,Los Angeles,treatment,6,pre,46047.7,550,0.0
+DMA_01,Los Angeles,treatment,7,pre,39404.69,446,0.0
+DMA_01,Los Angeles,treatment,8,pre,37528.59,439,0.0
+DMA_01,Los Angeles,treatment,9,pre,38436.2,449,0.0
+DMA_01,Los Angeles,treatment,10,pre,41668.61,472,0.0
+DMA_01,Los Angeles,treatment,11,pre,45574.73,526,0.0
+DMA_01,Los Angeles,treatment,12,pre,47927.81,576,0.0
+DMA_01,Los Angeles,treatment,13,pre,48106.11,592,0.0
+DMA_01,Los Angeles,treatment,14,pre,40539.6,511,0.0
+DMA_01,Los Angeles,treatment,15,pre,37246.81,443,0.0
+DMA_01,Los Angeles,treatment,16,pre,38967.55,464,0.0
+DMA_01,Los Angeles,treatment,17,pre,39277.07,476,0.0
+DMA_01,Los Angeles,treatment,18,pre,46501.05,509,0.0
+DMA_01,Los Angeles,treatment,19,pre,49109.19,577,0.0
+DMA_01,Los Angeles,treatment,20,pre,46852.25,568,0.0
+DMA_01,Los Angeles,treatment,21,pre,40514.81,483,0.0
+DMA_01,Los Angeles,treatment,22,pre,38361.33,452,0.0
+DMA_01,Los Angeles,treatment,23,pre,39969.18,435,0.0
+DMA_01,Los Angeles,treatment,24,pre,43596.72,547,0.0
+DMA_01,Los Angeles,treatment,25,pre,46563.43,519,0.0
+DMA_01,Los Angeles,treatment,26,pre,50659.79,611,0.0
+DMA_01,Los Angeles,treatment,27,pre,50046.16,608,0.0
+DMA_01,Los Angeles,treatment,28,pre,42012.69,465,0.0
+DMA_01,Los Angeles,treatment,29,pre,38479.82,451,0.0
+DMA_01,Los Angeles,treatment,30,pre,40618.79,468,0.0
+DMA_01,Los Angeles,treatment,31,pre,43571.88,498,0.0
+DMA_01,Los Angeles,treatment,32,pre,46057.76,570,0.0
+DMA_01,Los Angeles,treatment,33,pre,51027.61,593,0.0
+DMA_01,Los Angeles,treatment,34,pre,49855.71,637,0.0
+DMA_01,Los Angeles,treatment,35,pre,41761.94,483,0.0
+DMA_01,Los Angeles,treatment,36,pre,38601.45,481,0.0
+DMA_01,Los Angeles,treatment,37,pre,40544.59,462,0.0
+DMA_01,Los Angeles,treatment,38,pre,43576.1,508,0.0
+DMA_01,Los Angeles,treatment,39,pre,46267.85,554,0.0
+DMA_01,Los Angeles,treatment,40,pre,50469.33,613,0.0
+DMA_01,Los Angeles,treatment,41,pre,49016.78,586,0.0
+DMA_01,Los Angeles,treatment,42,pre,42537.86,492,0.0
+DMA_01,Los Angeles,treatment,43,pre,39374.18,449,0.0
+DMA_01,Los Angeles,treatment,44,pre,40594.3,498,0.0
+DMA_01,Los Angeles,treatment,45,pre,42290.28,510,0.0
+DMA_01,Los Angeles,treatment,46,pre,49489.79,622,0.0
+DMA_01,Los Angeles,treatment,47,pre,51526.73,645,0.0
+DMA_01,Los Angeles,treatment,48,pre,50674.26,563,0.0
+DMA_01,Los Angeles,treatment,49,pre,41077.78,479,0.0
+DMA_01,Los Angeles,treatment,50,pre,40046.09,485,0.0
+DMA_01,Los Angeles,treatment,51,pre,42021.93,506,0.0
+DMA_01,Los Angeles,treatment,52,pre,43885.99,530,0.0
+DMA_01,Los Angeles,treatment,53,pre,47871.98,558,0.0
+DMA_01,Los Angeles,treatment,54,pre,52582.14,673,0.0
+DMA_01,Los Angeles,treatment,55,pre,52516.46,571,0.0
+DMA_01,Los Angeles,treatment,56,pre,42461.28,517,0.0
+DMA_01,Los Angeles,treatment,57,pre,40739.01,477,0.0
+DMA_01,Los Angeles,treatment,58,pre,42011.15,470,0.0
+DMA_01,Los Angeles,treatment,59,pre,42775.19,512,0.0
+DMA_01,Los Angeles,treatment,60,post,48064.74,556,0.0
+DMA_01,Los Angeles,treatment,61,post,53678.59,595,1.4
+DMA_01,Los Angeles,treatment,62,post,50832.64,602,2.8
+DMA_01,Los Angeles,treatment,63,post,44463.45,519,4.2
+DMA_01,Los Angeles,treatment,64,post,43231.77,475,5.6
+DMA_01,Los Angeles,treatment,65,post,44632.26,519,7.0
+DMA_01,Los Angeles,treatment,66,post,49648.91,561,8.4
+DMA_01,Los Angeles,treatment,67,post,53784.08,683,9.8
+DMA_01,Los Angeles,treatment,68,post,59817.48,744,11.2
+DMA_01,Los Angeles,treatment,69,post,58208.35,654,12.6
+DMA_01,Los Angeles,treatment,70,post,48566.48,556,14.0
+DMA_01,Los Angeles,treatment,71,post,46459.68,583,14.0
+DMA_01,Los Angeles,treatment,72,post,49200.83,560,14.0
+DMA_01,Los Angeles,treatment,73,post,51578.22,612,14.0
+DMA_01,Los Angeles,treatment,74,post,58256.53,678,14.0
+DMA_01,Los Angeles,treatment,75,post,60688.21,766,14.0
+DMA_01,Los Angeles,treatment,76,post,60369.12,729,14.0
+DMA_01,Los Angeles,treatment,77,post,50275.23,552,14.0
+DMA_01,Los Angeles,treatment,78,post,48291.51,545,14.0
+DMA_01,Los Angeles,treatment,79,post,50411.57,637,14.0
+DMA_01,Los Angeles,treatment,80,post,52057.26,573,14.0
+DMA_01,Los Angeles,treatment,81,post,57596.96,721,14.0
+DMA_01,Los Angeles,treatment,82,post,60153.01,700,14.0
+DMA_01,Los Angeles,treatment,83,post,57630.23,722,14.0
+DMA_01,Los Angeles,treatment,84,post,51006.49,603,14.0
+DMA_01,Los Angeles,treatment,85,post,47940.97,536,14.0
+DMA_01,Los Angeles,treatment,86,post,49583.4,544,14.0
+DMA_01,Los Angeles,treatment,87,post,52184.25,605,14.0
+DMA_01,Los Angeles,treatment,88,post,58602.56,703,14.0
+DMA_01,Los Angeles,treatment,89,post,61363.94,702,14.0
+DMA_02,Chicago,treatment,0,pre,26077.14,332,0.0
+DMA_02,Chicago,treatment,1,pre,24821.71,280,0.0
+DMA_02,Chicago,treatment,2,pre,25048.91,292,0.0
+DMA_02,Chicago,treatment,3,pre,26924.27,341,0.0
+DMA_02,Chicago,treatment,4,pre,30015.11,377,0.0
+DMA_02,Chicago,treatment,5,pre,32929.87,375,0.0
+DMA_02,Chicago,treatment,6,pre,30766.84,345,0.0
+DMA_02,Chicago,treatment,7,pre,26288.9,308,0.0
+DMA_02,Chicago,treatment,8,pre,25750.98,307,0.0
+DMA_02,Chicago,treatment,9,pre,25544.13,301,0.0
+DMA_02,Chicago,treatment,10,pre,26881.76,299,0.0
+DMA_02,Chicago,treatment,11,pre,29479.82,365,0.0
+DMA_02,Chicago,treatment,12,pre,32408.19,398,0.0
+DMA_02,Chicago,treatment,13,pre,31185.98,343,0.0
+DMA_02,Chicago,treatment,14,pre,26500.59,321,0.0
+DMA_02,Chicago,treatment,15,pre,23825.21,302,0.0
+DMA_02,Chicago,treatment,16,pre,25731.71,316,0.0
+DMA_02,Chicago,treatment,17,pre,27233.38,304,0.0
+DMA_02,Chicago,treatment,18,pre,31415.85,402,0.0
+DMA_02,Chicago,treatment,19,pre,32935.02,388,0.0
+DMA_02,Chicago,treatment,20,pre,31372.95,342,0.0
+DMA_02,Chicago,treatment,21,pre,26154.22,315,0.0
+DMA_02,Chicago,treatment,22,pre,25739.77,318,0.0
+DMA_02,Chicago,treatment,23,pre,26344.58,312,0.0
+DMA_02,Chicago,treatment,24,pre,27201.0,337,0.0
+DMA_02,Chicago,treatment,25,pre,31314.06,342,0.0
+DMA_02,Chicago,treatment,26,pre,33288.77,424,0.0
+DMA_02,Chicago,treatment,27,pre,31853.02,389,0.0
+DMA_02,Chicago,treatment,28,pre,26412.09,287,0.0
+DMA_02,Chicago,treatment,29,pre,25654.57,315,0.0
+DMA_02,Chicago,treatment,30,pre,25662.16,322,0.0
+DMA_02,Chicago,treatment,31,pre,27450.45,337,0.0
+DMA_02,Chicago,treatment,32,pre,31172.29,380,0.0
+DMA_02,Chicago,treatment,33,pre,32147.91,386,0.0
+DMA_02,Chicago,treatment,34,pre,31154.96,360,0.0
+DMA_02,Chicago,treatment,35,pre,27027.28,329,0.0
+DMA_02,Chicago,treatment,36,pre,25718.23,284,0.0
+DMA_02,Chicago,treatment,37,pre,26472.67,338,0.0
+DMA_02,Chicago,treatment,38,pre,28082.68,357,0.0
+DMA_02,Chicago,treatment,39,pre,30618.62,348,0.0
+DMA_02,Chicago,treatment,40,pre,33839.43,407,0.0
+DMA_02,Chicago,treatment,41,pre,31976.14,351,0.0
+DMA_02,Chicago,treatment,42,pre,27298.59,342,0.0
+DMA_02,Chicago,treatment,43,pre,26145.33,302,0.0
+DMA_02,Chicago,treatment,44,pre,26834.46,322,0.0
+DMA_02,Chicago,treatment,45,pre,27955.17,326,0.0
+DMA_02,Chicago,treatment,46,pre,30256.9,351,0.0
+DMA_02,Chicago,treatment,47,pre,33674.13,385,0.0
+DMA_02,Chicago,treatment,48,pre,31916.74,378,0.0
+DMA_02,Chicago,treatment,49,pre,26514.16,291,0.0
+DMA_02,Chicago,treatment,50,pre,26475.57,308,0.0
+DMA_02,Chicago,treatment,51,pre,26868.15,316,0.0
+DMA_02,Chicago,treatment,52,pre,28310.88,311,0.0
+DMA_02,Chicago,treatment,53,pre,31204.94,386,0.0
+DMA_02,Chicago,treatment,54,pre,33616.51,403,0.0
+DMA_02,Chicago,treatment,55,pre,32198.76,357,0.0
+DMA_02,Chicago,treatment,56,pre,27854.31,321,0.0
+DMA_02,Chicago,treatment,57,pre,26516.1,296,0.0
+DMA_02,Chicago,treatment,58,pre,26411.03,316,0.0
+DMA_02,Chicago,treatment,59,pre,27832.0,314,0.0
+DMA_02,Chicago,treatment,60,post,30765.24,337,0.0
+DMA_02,Chicago,treatment,61,post,33987.03,374,1.4
+DMA_02,Chicago,treatment,62,post,34453.37,421,2.8
+DMA_02,Chicago,treatment,63,post,28158.46,348,4.2
+DMA_02,Chicago,treatment,64,post,27422.07,303,5.6
+DMA_02,Chicago,treatment,65,post,28473.44,318,7.0
+DMA_02,Chicago,treatment,66,post,30274.36,380,8.4
+DMA_02,Chicago,treatment,67,post,34556.45,420,9.8
+DMA_02,Chicago,treatment,68,post,36860.5,429,11.2
+DMA_02,Chicago,treatment,69,post,37995.25,470,12.6
+DMA_02,Chicago,treatment,70,post,31221.02,381,14.0
+DMA_02,Chicago,treatment,71,post,30864.96,349,14.0
+DMA_02,Chicago,treatment,72,post,30133.74,352,14.0
+DMA_02,Chicago,treatment,73,post,33375.45,380,14.0
+DMA_02,Chicago,treatment,74,post,36537.91,449,14.0
+DMA_02,Chicago,treatment,75,post,39800.18,449,14.0
+DMA_02,Chicago,treatment,76,post,37433.62,418,14.0
+DMA_02,Chicago,treatment,77,post,32413.14,383,14.0
+DMA_02,Chicago,treatment,78,post,30322.83,366,14.0
+DMA_02,Chicago,treatment,79,post,31858.47,348,14.0
+DMA_02,Chicago,treatment,80,post,33896.65,386,14.0
+DMA_02,Chicago,treatment,81,post,37137.53,459,14.0
+DMA_02,Chicago,treatment,82,post,40474.36,462,14.0
+DMA_02,Chicago,treatment,83,post,38059.5,487,14.0
+DMA_02,Chicago,treatment,84,post,32141.06,352,14.0
+DMA_02,Chicago,treatment,85,post,30555.04,359,14.0
+DMA_02,Chicago,treatment,86,post,31188.57,385,14.0
+DMA_02,Chicago,treatment,87,post,32617.02,388,14.0
+DMA_02,Chicago,treatment,88,post,37293.97,441,14.0
+DMA_02,Chicago,treatment,89,post,39468.64,481,14.0
+DMA_03,Houston,treatment,0,pre,20389.06,224,0.0
+DMA_03,Houston,treatment,1,pre,19761.98,251,0.0
+DMA_03,Houston,treatment,2,pre,20015.57,237,0.0
+DMA_03,Houston,treatment,3,pre,21909.1,279,0.0
+DMA_03,Houston,treatment,4,pre,23388.73,256,0.0
+DMA_03,Houston,treatment,5,pre,25102.48,289,0.0
+DMA_03,Houston,treatment,6,pre,24962.73,308,0.0
+DMA_03,Houston,treatment,7,pre,20049.69,249,0.0
+DMA_03,Houston,treatment,8,pre,20102.48,236,0.0
+DMA_03,Houston,treatment,9,pre,20107.33,244,0.0
+DMA_03,Houston,treatment,10,pre,21361.85,245,0.0
+DMA_03,Houston,treatment,11,pre,23706.13,283,0.0
+DMA_03,Houston,treatment,12,pre,25295.22,309,0.0
+DMA_03,Houston,treatment,13,pre,24496.94,299,0.0
+DMA_03,Houston,treatment,14,pre,20348.49,222,0.0
+DMA_03,Houston,treatment,15,pre,19794.28,249,0.0
+DMA_03,Houston,treatment,16,pre,20056.1,238,0.0
+DMA_03,Houston,treatment,17,pre,22352.9,268,0.0
+DMA_03,Houston,treatment,18,pre,23656.71,302,0.0
+DMA_03,Houston,treatment,19,pre,25969.09,285,0.0
+DMA_03,Houston,treatment,20,pre,24602.86,288,0.0
+DMA_03,Houston,treatment,21,pre,21237.12,267,0.0
+DMA_03,Houston,treatment,22,pre,20734.58,227,0.0
+DMA_03,Houston,treatment,23,pre,20221.42,248,0.0
+DMA_03,Houston,treatment,24,pre,21900.88,259,0.0
+DMA_03,Houston,treatment,25,pre,24119.27,289,0.0
+DMA_03,Houston,treatment,26,pre,26401.17,303,0.0
+DMA_03,Houston,treatment,27,pre,25057.21,308,0.0
+DMA_03,Houston,treatment,28,pre,20976.23,261,0.0
+DMA_03,Houston,treatment,29,pre,20404.34,235,0.0
+DMA_03,Houston,treatment,30,pre,21048.45,253,0.0
+DMA_03,Houston,treatment,31,pre,21522.45,262,0.0
+DMA_03,Houston,treatment,32,pre,24081.39,271,0.0
+DMA_03,Houston,treatment,33,pre,26143.86,321,0.0
+DMA_03,Houston,treatment,34,pre,25321.26,286,0.0
+DMA_03,Houston,treatment,35,pre,21070.23,240,0.0
+DMA_03,Houston,treatment,36,pre,20407.55,242,0.0
+DMA_03,Houston,treatment,37,pre,20847.37,254,0.0
+DMA_03,Houston,treatment,38,pre,21988.78,253,0.0
+DMA_03,Houston,treatment,39,pre,24544.56,267,0.0
+DMA_03,Houston,treatment,40,pre,26232.67,336,0.0
+DMA_03,Houston,treatment,41,pre,25531.32,278,0.0
+DMA_03,Houston,treatment,42,pre,22111.12,273,0.0
+DMA_03,Houston,treatment,43,pre,20419.56,244,0.0
+DMA_03,Houston,treatment,44,pre,21101.5,251,0.0
+DMA_03,Houston,treatment,45,pre,22683.05,275,0.0
+DMA_03,Houston,treatment,46,pre,24658.58,276,0.0
+DMA_03,Houston,treatment,47,pre,26940.29,299,0.0
+DMA_03,Houston,treatment,48,pre,25530.46,308,0.0
+DMA_03,Houston,treatment,49,pre,21886.56,253,0.0
+DMA_03,Houston,treatment,50,pre,21062.64,252,0.0
+DMA_03,Houston,treatment,51,pre,21244.88,250,0.0
+DMA_03,Houston,treatment,52,pre,21920.51,238,0.0
+DMA_03,Houston,treatment,53,pre,25609.94,322,0.0
+DMA_03,Houston,treatment,54,pre,26426.32,330,0.0
+DMA_03,Houston,treatment,55,pre,25345.32,309,0.0
+DMA_03,Houston,treatment,56,pre,21930.26,279,0.0
+DMA_03,Houston,treatment,57,pre,21537.75,234,0.0
+DMA_03,Houston,treatment,58,pre,21235.51,243,0.0
+DMA_03,Houston,treatment,59,pre,22731.49,272,0.0
+DMA_03,Houston,treatment,60,post,25145.15,285,0.0
+DMA_03,Houston,treatment,61,post,26828.5,306,1.4
+DMA_03,Houston,treatment,62,post,26875.77,314,2.8
+DMA_03,Houston,treatment,63,post,22314.02,253,4.2
+DMA_03,Houston,treatment,64,post,22796.34,262,5.6
+DMA_03,Houston,treatment,65,post,22928.44,291,7.0
+DMA_03,Houston,treatment,66,post,25276.47,294,8.4
+DMA_03,Houston,treatment,67,post,27819.13,345,9.8
+DMA_03,Houston,treatment,68,post,31146.18,391,11.2
+DMA_03,Houston,treatment,69,post,29635.07,331,12.6
+DMA_03,Houston,treatment,70,post,25426.09,304,14.0
+DMA_03,Houston,treatment,71,post,23752.74,291,14.0
+DMA_03,Houston,treatment,72,post,24734.86,279,14.0
+DMA_03,Houston,treatment,73,post,26328.91,308,14.0
+DMA_03,Houston,treatment,74,post,29082.66,370,14.0
+DMA_03,Houston,treatment,75,post,31881.42,398,14.0
+DMA_03,Houston,treatment,76,post,30199.28,358,14.0
+DMA_03,Houston,treatment,77,post,26248.02,318,14.0
+DMA_03,Houston,treatment,78,post,24943.68,286,14.0
+DMA_03,Houston,treatment,79,post,25013.35,277,14.0
+DMA_03,Houston,treatment,80,post,26952.43,305,14.0
+DMA_03,Houston,treatment,81,post,29620.19,342,14.0
+DMA_03,Houston,treatment,82,post,32105.93,408,14.0
+DMA_03,Houston,treatment,83,post,31020.6,363,14.0
+DMA_03,Houston,treatment,84,post,25490.26,301,14.0
+DMA_03,Houston,treatment,85,post,25050.71,297,14.0
+DMA_03,Houston,treatment,86,post,24863.67,291,14.0
+DMA_03,Houston,treatment,87,post,26605.53,315,14.0
+DMA_03,Houston,treatment,88,post,29863.04,380,14.0
+DMA_03,Houston,treatment,89,post,32948.12,420,14.0
+DMA_04,Phoenix,treatment,0,pre,17060.07,186,0.0
+DMA_04,Phoenix,treatment,1,pre,16330.17,180,0.0
+DMA_04,Phoenix,treatment,2,pre,17070.87,202,0.0
+DMA_04,Phoenix,treatment,3,pre,17143.49,211,0.0
+DMA_04,Phoenix,treatment,4,pre,18856.89,215,0.0
+DMA_04,Phoenix,treatment,5,pre,20506.96,254,0.0
+DMA_04,Phoenix,treatment,6,pre,20078.94,255,0.0
+DMA_04,Phoenix,treatment,7,pre,16825.81,209,0.0
+DMA_04,Phoenix,treatment,8,pre,16213.24,178,0.0
+DMA_04,Phoenix,treatment,9,pre,16456.13,205,0.0
+DMA_04,Phoenix,treatment,10,pre,17654.53,195,0.0
+DMA_04,Phoenix,treatment,11,pre,19272.71,230,0.0
+DMA_04,Phoenix,treatment,12,pre,21188.05,256,0.0
+DMA_04,Phoenix,treatment,13,pre,20488.56,254,0.0
+DMA_04,Phoenix,treatment,14,pre,16410.0,197,0.0
+DMA_04,Phoenix,treatment,15,pre,16143.7,176,0.0
+DMA_04,Phoenix,treatment,16,pre,17167.55,207,0.0
+DMA_04,Phoenix,treatment,17,pre,17388.56,189,0.0
+DMA_04,Phoenix,treatment,18,pre,18977.37,239,0.0
+DMA_04,Phoenix,treatment,19,pre,21047.36,230,0.0
+DMA_04,Phoenix,treatment,20,pre,20173.52,257,0.0
+DMA_04,Phoenix,treatment,21,pre,17191.92,211,0.0
+DMA_04,Phoenix,treatment,22,pre,16393.49,194,0.0
+DMA_04,Phoenix,treatment,23,pre,16757.27,201,0.0
+DMA_04,Phoenix,treatment,24,pre,17427.67,218,0.0
+DMA_04,Phoenix,treatment,25,pre,19343.37,211,0.0
+DMA_04,Phoenix,treatment,26,pre,20782.01,256,0.0
+DMA_04,Phoenix,treatment,27,pre,20382.5,233,0.0
+DMA_04,Phoenix,treatment,28,pre,17330.69,215,0.0
+DMA_04,Phoenix,treatment,29,pre,16568.73,180,0.0
+DMA_04,Phoenix,treatment,30,pre,16918.38,196,0.0
+DMA_04,Phoenix,treatment,31,pre,17261.64,188,0.0
+DMA_04,Phoenix,treatment,32,pre,19913.11,233,0.0
+DMA_04,Phoenix,treatment,33,pre,21745.41,245,0.0
+DMA_04,Phoenix,treatment,34,pre,20345.04,246,0.0
+DMA_04,Phoenix,treatment,35,pre,17410.97,209,0.0
+DMA_04,Phoenix,treatment,36,pre,16347.66,184,0.0
+DMA_04,Phoenix,treatment,37,pre,17242.58,204,0.0
+DMA_04,Phoenix,treatment,38,pre,16919.19,207,0.0
+DMA_04,Phoenix,treatment,39,pre,19122.06,209,0.0
+DMA_04,Phoenix,treatment,40,pre,21139.82,266,0.0
+DMA_04,Phoenix,treatment,41,pre,20787.04,256,0.0
+DMA_04,Phoenix,treatment,42,pre,17273.85,208,0.0
+DMA_04,Phoenix,treatment,43,pre,16054.31,180,0.0
+DMA_04,Phoenix,treatment,44,pre,17299.35,188,0.0
+DMA_04,Phoenix,treatment,45,pre,17890.42,220,0.0
+DMA_04,Phoenix,treatment,46,pre,20175.53,221,0.0
+DMA_04,Phoenix,treatment,47,pre,21437.56,261,0.0
+DMA_04,Phoenix,treatment,48,pre,20029.28,232,0.0
+DMA_04,Phoenix,treatment,49,pre,17410.86,200,0.0
+DMA_04,Phoenix,treatment,50,pre,16377.89,180,0.0
+DMA_04,Phoenix,treatment,51,pre,17217.15,198,0.0
+DMA_04,Phoenix,treatment,52,pre,18044.24,223,0.0
+DMA_04,Phoenix,treatment,53,pre,19822.38,252,0.0
+DMA_04,Phoenix,treatment,54,pre,21938.69,243,0.0
+DMA_04,Phoenix,treatment,55,pre,20770.88,261,0.0
+DMA_04,Phoenix,treatment,56,pre,17902.31,217,0.0
+DMA_04,Phoenix,treatment,57,pre,17061.2,186,0.0
+DMA_04,Phoenix,treatment,58,pre,17057.41,200,0.0
+DMA_04,Phoenix,treatment,59,pre,18060.38,205,0.0
+DMA_04,Phoenix,treatment,60,post,19744.44,229,0.0
+DMA_04,Phoenix,treatment,61,post,21375.51,236,1.4
+DMA_04,Phoenix,treatment,62,post,21084.05,258,2.8
+DMA_04,Phoenix,treatment,63,post,18567.12,217,4.2
+DMA_04,Phoenix,treatment,64,post,17994.14,211,5.6
+DMA_04,Phoenix,treatment,65,post,18904.75,218,7.0
+DMA_04,Phoenix,treatment,66,post,19829.4,218,8.4
+DMA_04,Phoenix,treatment,67,post,22742.11,249,9.8
+DMA_04,Phoenix,treatment,68,post,24166.58,296,11.2
+DMA_04,Phoenix,treatment,69,post,23676.32,283,12.6
+DMA_04,Phoenix,treatment,70,post,20513.88,248,14.0
+DMA_04,Phoenix,treatment,71,post,18886.59,213,14.0
+DMA_04,Phoenix,treatment,72,post,19874.33,230,14.0
+DMA_04,Phoenix,treatment,73,post,20743.46,231,14.0
+DMA_04,Phoenix,treatment,74,post,23890.99,278,14.0
+DMA_04,Phoenix,treatment,75,post,24354.22,265,14.0
+DMA_04,Phoenix,treatment,76,post,24107.24,299,14.0
+DMA_04,Phoenix,treatment,77,post,20878.64,230,14.0
+DMA_04,Phoenix,treatment,78,post,19643.02,215,14.0
+DMA_04,Phoenix,treatment,79,post,19480.08,240,14.0
+DMA_04,Phoenix,treatment,80,post,21202.3,236,14.0
+DMA_04,Phoenix,treatment,81,post,23033.13,277,14.0
+DMA_04,Phoenix,treatment,82,post,24707.35,269,14.0
+DMA_04,Phoenix,treatment,83,post,23956.15,267,14.0
+DMA_04,Phoenix,treatment,84,post,20421.45,256,14.0
+DMA_04,Phoenix,treatment,85,post,19880.25,252,14.0
+DMA_04,Phoenix,treatment,86,post,20211.99,221,14.0
+DMA_04,Phoenix,treatment,87,post,21029.41,234,14.0
+DMA_04,Phoenix,treatment,88,post,23222.68,285,14.0
+DMA_04,Phoenix,treatment,89,post,24593.85,304,14.0
+DMA_05,Denver,treatment,0,pre,13912.51,168,0.0
+DMA_05,Denver,treatment,1,pre,13841.25,174,0.0
+DMA_05,Denver,treatment,2,pre,13172.03,157,0.0
+DMA_05,Denver,treatment,3,pre,14599.38,177,0.0
+DMA_05,Denver,treatment,4,pre,16263.21,207,0.0
+DMA_05,Denver,treatment,5,pre,16534.53,183,0.0
+DMA_05,Denver,treatment,6,pre,16627.91,203,0.0
+DMA_05,Denver,treatment,7,pre,14250.47,155,0.0
+DMA_05,Denver,treatment,8,pre,13826.68,157,0.0
+DMA_05,Denver,treatment,9,pre,13545.23,161,0.0
+DMA_05,Denver,treatment,10,pre,14538.09,179,0.0
+DMA_05,Denver,treatment,11,pre,15862.73,193,0.0
+DMA_05,Denver,treatment,12,pre,17169.37,216,0.0
+DMA_05,Denver,treatment,13,pre,17043.22,211,0.0
+DMA_05,Denver,treatment,14,pre,14372.63,181,0.0
+DMA_05,Denver,treatment,15,pre,13265.22,150,0.0
+DMA_05,Denver,treatment,16,pre,14065.39,170,0.0
+DMA_05,Denver,treatment,17,pre,14605.55,160,0.0
+DMA_05,Denver,treatment,18,pre,15551.34,178,0.0
+DMA_05,Denver,treatment,19,pre,17442.59,214,0.0
+DMA_05,Denver,treatment,20,pre,16627.17,181,0.0
+DMA_05,Denver,treatment,21,pre,14090.76,165,0.0
+DMA_05,Denver,treatment,22,pre,13605.11,157,0.0
+DMA_05,Denver,treatment,23,pre,14380.29,166,0.0
+DMA_05,Denver,treatment,24,pre,14687.39,175,0.0
+DMA_05,Denver,treatment,25,pre,15867.44,177,0.0
+DMA_05,Denver,treatment,26,pre,17562.26,203,0.0
+DMA_05,Denver,treatment,27,pre,17143.06,204,0.0
+DMA_05,Denver,treatment,28,pre,14571.86,166,0.0
+DMA_05,Denver,treatment,29,pre,13829.76,151,0.0
+DMA_05,Denver,treatment,30,pre,14291.05,181,0.0
+DMA_05,Denver,treatment,31,pre,15002.07,171,0.0
+DMA_05,Denver,treatment,32,pre,16198.35,180,0.0
+DMA_05,Denver,treatment,33,pre,17764.79,205,0.0
+DMA_05,Denver,treatment,34,pre,17132.01,202,0.0
+DMA_05,Denver,treatment,35,pre,14224.78,175,0.0
+DMA_05,Denver,treatment,36,pre,13832.27,159,0.0
+DMA_05,Denver,treatment,37,pre,14139.24,171,0.0
+DMA_05,Denver,treatment,38,pre,15246.23,172,0.0
+DMA_05,Denver,treatment,39,pre,16287.04,184,0.0
+DMA_05,Denver,treatment,40,pre,17809.83,207,0.0
+DMA_05,Denver,treatment,41,pre,16896.72,191,0.0
+DMA_05,Denver,treatment,42,pre,14482.33,172,0.0
+DMA_05,Denver,treatment,43,pre,14130.14,160,0.0
+DMA_05,Denver,treatment,44,pre,14441.22,174,0.0
+DMA_05,Denver,treatment,45,pre,15589.3,193,0.0
+DMA_05,Denver,treatment,46,pre,16468.94,181,0.0
+DMA_05,Denver,treatment,47,pre,17871.39,220,0.0
+DMA_05,Denver,treatment,48,pre,17055.27,186,0.0
+DMA_05,Denver,treatment,49,pre,14486.02,182,0.0
+DMA_05,Denver,treatment,50,pre,14110.23,161,0.0
+DMA_05,Denver,treatment,51,pre,14403.89,160,0.0
+DMA_05,Denver,treatment,52,pre,15378.95,175,0.0
+DMA_05,Denver,treatment,53,pre,16420.08,194,0.0
+DMA_05,Denver,treatment,54,pre,18175.67,200,0.0
+DMA_05,Denver,treatment,55,pre,17666.96,199,0.0
+DMA_05,Denver,treatment,56,pre,14691.76,174,0.0
+DMA_05,Denver,treatment,57,pre,15041.22,192,0.0
+DMA_05,Denver,treatment,58,pre,13833.35,172,0.0
+DMA_05,Denver,treatment,59,pre,15578.88,195,0.0
+DMA_05,Denver,treatment,60,post,16714.87,182,0.0
+DMA_05,Denver,treatment,61,post,18409.3,221,1.4
+DMA_05,Denver,treatment,62,post,17874.84,212,2.8
+DMA_05,Denver,treatment,63,post,15441.99,197,4.2
+DMA_05,Denver,treatment,64,post,15014.58,167,5.6
+DMA_05,Denver,treatment,65,post,15542.62,184,7.0
+DMA_05,Denver,treatment,66,post,16938.58,191,8.4
+DMA_05,Denver,treatment,67,post,18965.54,228,9.8
+DMA_05,Denver,treatment,68,post,20767.09,248,11.2
+DMA_05,Denver,treatment,69,post,19707.24,223,12.6
+DMA_05,Denver,treatment,70,post,16490.0,208,14.0
+DMA_05,Denver,treatment,71,post,16662.2,209,14.0
+DMA_05,Denver,treatment,72,post,16686.14,181,14.0
+DMA_05,Denver,treatment,73,post,17969.07,216,14.0
+DMA_05,Denver,treatment,74,post,19252.52,232,14.0
+DMA_05,Denver,treatment,75,post,20534.28,236,14.0
+DMA_05,Denver,treatment,76,post,19724.27,232,14.0
+DMA_05,Denver,treatment,77,post,16579.94,196,14.0
+DMA_05,Denver,treatment,78,post,15810.49,187,14.0
+DMA_05,Denver,treatment,79,post,16828.72,201,14.0
+DMA_05,Denver,treatment,80,post,18528.99,227,14.0
+DMA_05,Denver,treatment,81,post,19776.61,232,14.0
+DMA_05,Denver,treatment,82,post,21065.47,246,14.0
+DMA_05,Denver,treatment,83,post,20454.7,251,14.0
+DMA_05,Denver,treatment,84,post,17666.7,213,14.0
+DMA_05,Denver,treatment,85,post,16464.62,194,14.0
+DMA_05,Denver,treatment,86,post,16530.65,204,14.0
+DMA_05,Denver,treatment,87,post,18248.31,222,14.0
+DMA_05,Denver,treatment,88,post,19545.76,228,14.0
+DMA_05,Denver,treatment,89,post,21285.53,265,14.0
+DMA_06,Philadelphia,control,0,pre,34474.87,393,0.0
+DMA_06,Philadelphia,control,1,pre,34332.33,414,0.0
+DMA_06,Philadelphia,control,2,pre,34656.78,422,0.0
+DMA_06,Philadelphia,control,3,pre,36054.2,414,0.0
+DMA_06,Philadelphia,control,4,pre,40075.14,485,0.0
+DMA_06,Philadelphia,control,5,pre,43580.49,513,0.0
+DMA_06,Philadelphia,control,6,pre,41404.17,475,0.0
+DMA_06,Philadelphia,control,7,pre,35745.85,431,0.0
+DMA_06,Philadelphia,control,8,pre,34450.39,436,0.0
+DMA_06,Philadelphia,control,9,pre,34631.7,380,0.0
+DMA_06,Philadelphia,control,10,pre,36773.73,470,0.0
+DMA_06,Philadelphia,control,11,pre,42182.53,505,0.0
+DMA_06,Philadelphia,control,12,pre,44688.37,515,0.0
+DMA_06,Philadelphia,control,13,pre,42747.37,511,0.0
+DMA_06,Philadelphia,control,14,pre,36619.15,441,0.0
+DMA_06,Philadelphia,control,15,pre,34341.92,435,0.0
+DMA_06,Philadelphia,control,16,pre,34487.32,438,0.0
+DMA_06,Philadelphia,control,17,pre,36915.88,459,0.0
+DMA_06,Philadelphia,control,18,pre,41724.38,477,0.0
+DMA_06,Philadelphia,control,19,pre,42876.44,545,0.0
+DMA_06,Philadelphia,control,20,pre,42894.54,490,0.0
+DMA_06,Philadelphia,control,21,pre,35472.26,431,0.0
+DMA_06,Philadelphia,control,22,pre,33958.81,374,0.0
+DMA_06,Philadelphia,control,23,pre,36192.5,400,0.0
+DMA_06,Philadelphia,control,24,pre,37219.26,420,0.0
+DMA_06,Philadelphia,control,25,pre,42312.69,538,0.0
+DMA_06,Philadelphia,control,26,pre,44353.31,522,0.0
+DMA_06,Philadelphia,control,27,pre,42269.12,465,0.0
+DMA_06,Philadelphia,control,28,pre,37499.8,473,0.0
+DMA_06,Philadelphia,control,29,pre,35579.28,433,0.0
+DMA_06,Philadelphia,control,30,pre,35861.87,402,0.0
+DMA_06,Philadelphia,control,31,pre,37991.4,484,0.0
+DMA_06,Philadelphia,control,32,pre,41191.56,448,0.0
+DMA_06,Philadelphia,control,33,pre,45751.84,507,0.0
+DMA_06,Philadelphia,control,34,pre,43228.22,493,0.0
+DMA_06,Philadelphia,control,35,pre,36574.33,462,0.0
+DMA_06,Philadelphia,control,36,pre,34872.25,430,0.0
+DMA_06,Philadelphia,control,37,pre,36236.81,396,0.0
+DMA_06,Philadelphia,control,38,pre,40082.32,490,0.0
+DMA_06,Philadelphia,control,39,pre,42168.0,501,0.0
+DMA_06,Philadelphia,control,40,pre,45489.85,577,0.0
+DMA_06,Philadelphia,control,41,pre,43030.05,546,0.0
+DMA_06,Philadelphia,control,42,pre,36914.42,432,0.0
+DMA_06,Philadelphia,control,43,pre,35707.0,436,0.0
+DMA_06,Philadelphia,control,44,pre,36653.54,446,0.0
+DMA_06,Philadelphia,control,45,pre,37603.88,445,0.0
+DMA_06,Philadelphia,control,46,pre,43771.65,491,0.0
+DMA_06,Philadelphia,control,47,pre,46104.62,504,0.0
+DMA_06,Philadelphia,control,48,pre,44133.71,521,0.0
+DMA_06,Philadelphia,control,49,pre,37368.72,414,0.0
+DMA_06,Philadelphia,control,50,pre,36123.85,450,0.0
+DMA_06,Philadelphia,control,51,pre,37765.92,452,0.0
+DMA_06,Philadelphia,control,52,pre,38251.18,486,0.0
+DMA_06,Philadelphia,control,53,pre,44027.21,510,0.0
+DMA_06,Philadelphia,control,54,pre,47028.29,585,0.0
+DMA_06,Philadelphia,control,55,pre,45452.17,549,0.0
+DMA_06,Philadelphia,control,56,pre,36726.49,461,0.0
+DMA_06,Philadelphia,control,57,pre,35043.44,420,0.0
+DMA_06,Philadelphia,control,58,pre,38311.07,445,0.0
+DMA_06,Philadelphia,control,59,pre,39196.01,468,0.0
+DMA_06,Philadelphia,control,60,post,43411.24,473,0.0
+DMA_06,Philadelphia,control,61,post,47199.36,523,0.0
+DMA_06,Philadelphia,control,62,post,45579.3,496,0.0
+DMA_06,Philadelphia,control,63,post,38317.01,472,0.0
+DMA_06,Philadelphia,control,64,post,36862.04,471,0.0
+DMA_06,Philadelphia,control,65,post,37544.14,420,0.0
+DMA_06,Philadelphia,control,66,post,38698.5,492,0.0
+DMA_06,Philadelphia,control,67,post,43938.3,490,0.0
+DMA_06,Philadelphia,control,68,post,47867.08,539,0.0
+DMA_06,Philadelphia,control,69,post,45234.43,502,0.0
+DMA_06,Philadelphia,control,70,post,39690.99,481,0.0
+DMA_06,Philadelphia,control,71,post,36658.36,466,0.0
+DMA_06,Philadelphia,control,72,post,37629.15,480,0.0
+DMA_06,Philadelphia,control,73,post,38188.88,488,0.0
+DMA_06,Philadelphia,control,74,post,43508.98,550,0.0
+DMA_06,Philadelphia,control,75,post,47652.92,561,0.0
+DMA_06,Philadelphia,control,76,post,45240.99,572,0.0
+DMA_06,Philadelphia,control,77,post,38510.79,475,0.0
+DMA_06,Philadelphia,control,78,post,36600.53,467,0.0
+DMA_06,Philadelphia,control,79,post,37665.36,453,0.0
+DMA_06,Philadelphia,control,80,post,39763.53,452,0.0
+DMA_06,Philadelphia,control,81,post,45104.63,511,0.0
+DMA_06,Philadelphia,control,82,post,48163.75,578,0.0
+DMA_06,Philadelphia,control,83,post,45586.19,505,0.0
+DMA_06,Philadelphia,control,84,post,39101.85,427,0.0
+DMA_06,Philadelphia,control,85,post,38351.5,439,0.0
+DMA_06,Philadelphia,control,86,post,37362.02,424,0.0
+DMA_06,Philadelphia,control,87,post,40846.84,497,0.0
+DMA_06,Philadelphia,control,88,post,44614.7,490,0.0
+DMA_06,Philadelphia,control,89,post,46259.5,520,0.0
+DMA_07,Dallas,control,0,pre,27720.2,308,0.0
+DMA_07,Dallas,control,1,pre,26617.0,300,0.0
+DMA_07,Dallas,control,2,pre,27193.24,320,0.0
+DMA_07,Dallas,control,3,pre,29413.13,348,0.0
+DMA_07,Dallas,control,4,pre,31288.12,355,0.0
+DMA_07,Dallas,control,5,pre,33595.4,379,0.0
+DMA_07,Dallas,control,6,pre,32734.92,372,0.0
+DMA_07,Dallas,control,7,pre,28691.66,313,0.0
+DMA_07,Dallas,control,8,pre,26963.51,332,0.0
+DMA_07,Dallas,control,9,pre,27337.6,335,0.0
+DMA_07,Dallas,control,10,pre,29336.85,355,0.0
+DMA_07,Dallas,control,11,pre,32527.82,381,0.0
+DMA_07,Dallas,control,12,pre,34797.3,407,0.0
+DMA_07,Dallas,control,13,pre,33771.82,428,0.0
+DMA_07,Dallas,control,14,pre,27343.92,340,0.0
+DMA_07,Dallas,control,15,pre,26503.26,330,0.0
+DMA_07,Dallas,control,16,pre,27915.69,350,0.0
+DMA_07,Dallas,control,17,pre,28667.69,352,0.0
+DMA_07,Dallas,control,18,pre,32685.01,390,0.0
+DMA_07,Dallas,control,19,pre,35747.25,414,0.0
+DMA_07,Dallas,control,20,pre,33637.21,367,0.0
+DMA_07,Dallas,control,21,pre,27921.23,332,0.0
+DMA_07,Dallas,control,22,pre,27333.64,315,0.0
+DMA_07,Dallas,control,23,pre,27910.21,316,0.0
+DMA_07,Dallas,control,24,pre,29354.43,331,0.0
+DMA_07,Dallas,control,25,pre,32618.82,355,0.0
+DMA_07,Dallas,control,26,pre,35650.64,396,0.0
+DMA_07,Dallas,control,27,pre,34274.8,372,0.0
+DMA_07,Dallas,control,28,pre,28472.31,332,0.0
+DMA_07,Dallas,control,29,pre,26606.96,332,0.0
+DMA_07,Dallas,control,30,pre,27226.37,303,0.0
+DMA_07,Dallas,control,31,pre,29624.83,357,0.0
+DMA_07,Dallas,control,32,pre,32054.56,355,0.0
+DMA_07,Dallas,control,33,pre,34117.77,417,0.0
+DMA_07,Dallas,control,34,pre,34798.21,432,0.0
+DMA_07,Dallas,control,35,pre,28420.36,327,0.0
+DMA_07,Dallas,control,36,pre,27305.14,336,0.0
+DMA_07,Dallas,control,37,pre,28617.92,325,0.0
+DMA_07,Dallas,control,38,pre,30170.61,376,0.0
+DMA_07,Dallas,control,39,pre,31952.01,379,0.0
+DMA_07,Dallas,control,40,pre,35077.52,393,0.0
+DMA_07,Dallas,control,41,pre,33590.72,376,0.0
+DMA_07,Dallas,control,42,pre,28734.14,350,0.0
+DMA_07,Dallas,control,43,pre,28060.97,307,0.0
+DMA_07,Dallas,control,44,pre,29635.6,378,0.0
+DMA_07,Dallas,control,45,pre,29668.96,348,0.0
+DMA_07,Dallas,control,46,pre,33073.38,415,0.0
+DMA_07,Dallas,control,47,pre,35947.78,432,0.0
+DMA_07,Dallas,control,48,pre,34699.22,383,0.0
+DMA_07,Dallas,control,49,pre,29924.0,371,0.0
+DMA_07,Dallas,control,50,pre,28544.55,330,0.0
+DMA_07,Dallas,control,51,pre,28832.68,364,0.0
+DMA_07,Dallas,control,52,pre,30928.71,384,0.0
+DMA_07,Dallas,control,53,pre,34248.9,382,0.0
+DMA_07,Dallas,control,54,pre,35964.86,436,0.0
+DMA_07,Dallas,control,55,pre,35349.39,410,0.0
+DMA_07,Dallas,control,56,pre,29855.95,326,0.0
+DMA_07,Dallas,control,57,pre,28627.19,320,0.0
+DMA_07,Dallas,control,58,pre,28467.39,349,0.0
+DMA_07,Dallas,control,59,pre,30128.77,372,0.0
+DMA_07,Dallas,control,60,post,32904.32,389,0.0
+DMA_07,Dallas,control,61,post,36554.89,462,0.0
+DMA_07,Dallas,control,62,post,34795.22,403,0.0
+DMA_07,Dallas,control,63,post,29849.79,374,0.0
+DMA_07,Dallas,control,64,post,28663.46,314,0.0
+DMA_07,Dallas,control,65,post,29566.47,369,0.0
+DMA_07,Dallas,control,66,post,31853.57,400,0.0
+DMA_07,Dallas,control,67,post,32722.0,374,0.0
+DMA_07,Dallas,control,68,post,35336.84,421,0.0
+DMA_07,Dallas,control,69,post,35891.8,402,0.0
+DMA_07,Dallas,control,70,post,30035.53,330,0.0
+DMA_07,Dallas,control,71,post,28630.54,361,0.0
+DMA_07,Dallas,control,72,post,29566.32,375,0.0
+DMA_07,Dallas,control,73,post,31470.93,344,0.0
+DMA_07,Dallas,control,74,post,34453.79,379,0.0
+DMA_07,Dallas,control,75,post,37091.68,408,0.0
+DMA_07,Dallas,control,76,post,36411.75,445,0.0
+DMA_07,Dallas,control,77,post,30042.71,339,0.0
+DMA_07,Dallas,control,78,post,29699.84,358,0.0
+DMA_07,Dallas,control,79,post,29935.37,353,0.0
+DMA_07,Dallas,control,80,post,31197.25,350,0.0
+DMA_07,Dallas,control,81,post,33748.09,393,0.0
+DMA_07,Dallas,control,82,post,37228.02,421,0.0
+DMA_07,Dallas,control,83,post,35739.51,455,0.0
+DMA_07,Dallas,control,84,post,30530.48,358,0.0
+DMA_07,Dallas,control,85,post,29216.97,350,0.0
+DMA_07,Dallas,control,86,post,30082.6,356,0.0
+DMA_07,Dallas,control,87,post,31269.8,345,0.0
+DMA_07,Dallas,control,88,post,35203.09,427,0.0
+DMA_07,Dallas,control,89,post,38911.2,458,0.0
+DMA_08,San Diego,control,0,pre,22184.77,249,0.0
+DMA_08,San Diego,control,1,pre,20712.99,238,0.0
+DMA_08,San Diego,control,2,pre,22148.96,281,0.0
+DMA_08,San Diego,control,3,pre,23228.5,287,0.0
+DMA_08,San Diego,control,4,pre,25225.24,289,0.0
+DMA_08,San Diego,control,5,pre,28248.7,311,0.0
+DMA_08,San Diego,control,6,pre,26624.79,332,0.0
+DMA_08,San Diego,control,7,pre,22490.39,253,0.0
+DMA_08,San Diego,control,8,pre,22087.28,263,0.0
+DMA_08,San Diego,control,9,pre,22058.07,282,0.0
+DMA_08,San Diego,control,10,pre,23475.84,282,0.0
+DMA_08,San Diego,control,11,pre,25464.48,298,0.0
+DMA_08,San Diego,control,12,pre,27067.76,325,0.0
+DMA_08,San Diego,control,13,pre,26660.8,289,0.0
+DMA_08,San Diego,control,14,pre,22033.99,257,0.0
+DMA_08,San Diego,control,15,pre,22566.98,276,0.0
+DMA_08,San Diego,control,16,pre,22780.54,286,0.0
+DMA_08,San Diego,control,17,pre,23557.69,287,0.0
+DMA_08,San Diego,control,18,pre,26121.6,286,0.0
+DMA_08,San Diego,control,19,pre,27378.73,326,0.0
+DMA_08,San Diego,control,20,pre,26676.96,334,0.0
+DMA_08,San Diego,control,21,pre,22733.74,272,0.0
+DMA_08,San Diego,control,22,pre,22204.43,275,0.0
+DMA_08,San Diego,control,23,pre,22803.22,285,0.0
+DMA_08,San Diego,control,24,pre,23411.25,277,0.0
+DMA_08,San Diego,control,25,pre,26205.43,330,0.0
+DMA_08,San Diego,control,26,pre,28067.04,329,0.0
+DMA_08,San Diego,control,27,pre,27287.97,324,0.0
+DMA_08,San Diego,control,28,pre,22967.5,284,0.0
+DMA_08,San Diego,control,29,pre,22257.68,275,0.0
+DMA_08,San Diego,control,30,pre,22854.5,267,0.0
+DMA_08,San Diego,control,31,pre,22953.76,268,0.0
+DMA_08,San Diego,control,32,pre,26323.71,315,0.0
+DMA_08,San Diego,control,33,pre,28503.27,348,0.0
+DMA_08,San Diego,control,34,pre,27644.19,337,0.0
+DMA_08,San Diego,control,35,pre,23103.02,251,0.0
+DMA_08,San Diego,control,36,pre,21912.07,267,0.0
+DMA_08,San Diego,control,37,pre,22590.16,249,0.0
+DMA_08,San Diego,control,38,pre,23738.51,274,0.0
+DMA_08,San Diego,control,39,pre,26228.76,327,0.0
+DMA_08,San Diego,control,40,pre,29166.42,337,0.0
+DMA_08,San Diego,control,41,pre,28130.38,345,0.0
+DMA_08,San Diego,control,42,pre,23363.04,284,0.0
+DMA_08,San Diego,control,43,pre,21943.91,264,0.0
+DMA_08,San Diego,control,44,pre,22441.06,284,0.0
+DMA_08,San Diego,control,45,pre,24034.68,288,0.0
+DMA_08,San Diego,control,46,pre,25799.8,313,0.0
+DMA_08,San Diego,control,47,pre,28587.23,324,0.0
+DMA_08,San Diego,control,48,pre,27654.49,310,0.0
+DMA_08,San Diego,control,49,pre,22426.68,275,0.0
+DMA_08,San Diego,control,50,pre,21784.07,261,0.0
+DMA_08,San Diego,control,51,pre,22501.62,254,0.0
+DMA_08,San Diego,control,52,pre,23649.09,279,0.0
+DMA_08,San Diego,control,53,pre,26816.51,306,0.0
+DMA_08,San Diego,control,54,pre,28962.65,358,0.0
+DMA_08,San Diego,control,55,pre,28255.31,313,0.0
+DMA_08,San Diego,control,56,pre,22974.06,267,0.0
+DMA_08,San Diego,control,57,pre,21782.64,241,0.0
+DMA_08,San Diego,control,58,pre,23425.65,289,0.0
+DMA_08,San Diego,control,59,pre,24583.05,296,0.0
+DMA_08,San Diego,control,60,post,26888.65,294,0.0
+DMA_08,San Diego,control,61,post,28400.65,321,0.0
+DMA_08,San Diego,control,62,post,27930.01,332,0.0
+DMA_08,San Diego,control,63,post,23164.36,292,0.0
+DMA_08,San Diego,control,64,post,22859.66,276,0.0
+DMA_08,San Diego,control,65,post,23132.18,264,0.0
+DMA_08,San Diego,control,66,post,23826.54,278,0.0
+DMA_08,San Diego,control,67,post,26797.14,308,0.0
+DMA_08,San Diego,control,68,post,28334.34,358,0.0
+DMA_08,San Diego,control,69,post,27859.4,319,0.0
+DMA_08,San Diego,control,70,post,23865.63,266,0.0
+DMA_08,San Diego,control,71,post,22544.19,268,0.0
+DMA_08,San Diego,control,72,post,22422.45,283,0.0
+DMA_08,San Diego,control,73,post,24002.17,307,0.0
+DMA_08,San Diego,control,74,post,26593.8,301,0.0
+DMA_08,San Diego,control,75,post,28607.88,356,0.0
+DMA_08,San Diego,control,76,post,28607.96,338,0.0
+DMA_08,San Diego,control,77,post,24128.96,302,0.0
+DMA_08,San Diego,control,78,post,22919.84,275,0.0
+DMA_08,San Diego,control,79,post,23364.75,263,0.0
+DMA_08,San Diego,control,80,post,24631.25,274,0.0
+DMA_08,San Diego,control,81,post,26950.28,296,0.0
+DMA_08,San Diego,control,82,post,29346.26,358,0.0
+DMA_08,San Diego,control,83,post,27663.84,341,0.0
+DMA_08,San Diego,control,84,post,23628.61,280,0.0
+DMA_08,San Diego,control,85,post,23499.39,261,0.0
+DMA_08,San Diego,control,86,post,23467.67,261,0.0
+DMA_08,San Diego,control,87,post,23991.13,300,0.0
+DMA_08,San Diego,control,88,post,27857.64,314,0.0
+DMA_08,San Diego,control,89,post,29551.04,326,0.0
+DMA_09,Seattle,control,0,pre,19624.56,220,0.0
+DMA_09,Seattle,control,1,pre,18241.97,217,0.0
+DMA_09,Seattle,control,2,pre,19439.98,213,0.0
+DMA_09,Seattle,control,3,pre,20412.66,238,0.0
+DMA_09,Seattle,control,4,pre,21986.62,243,0.0
+DMA_09,Seattle,control,5,pre,23399.01,287,0.0
+DMA_09,Seattle,control,6,pre,23311.98,271,0.0
+DMA_09,Seattle,control,7,pre,20054.1,218,0.0
+DMA_09,Seattle,control,8,pre,19321.08,241,0.0
+DMA_09,Seattle,control,9,pre,19711.12,233,0.0
+DMA_09,Seattle,control,10,pre,20069.99,256,0.0
+DMA_09,Seattle,control,11,pre,22490.05,287,0.0
+DMA_09,Seattle,control,12,pre,24126.66,284,0.0
+DMA_09,Seattle,control,13,pre,24163.09,296,0.0
+DMA_09,Seattle,control,14,pre,19479.51,242,0.0
+DMA_09,Seattle,control,15,pre,19069.27,213,0.0
+DMA_09,Seattle,control,16,pre,19666.24,249,0.0
+DMA_09,Seattle,control,17,pre,20501.67,248,0.0
+DMA_09,Seattle,control,18,pre,23012.21,290,0.0
+DMA_09,Seattle,control,19,pre,24552.83,274,0.0
+DMA_09,Seattle,control,20,pre,24330.8,264,0.0
+DMA_09,Seattle,control,21,pre,20485.96,248,0.0
+DMA_09,Seattle,control,22,pre,19380.96,223,0.0
+DMA_09,Seattle,control,23,pre,18880.88,229,0.0
+DMA_09,Seattle,control,24,pre,20571.05,254,0.0
+DMA_09,Seattle,control,25,pre,23034.47,294,0.0
+DMA_09,Seattle,control,26,pre,24417.95,297,0.0
+DMA_09,Seattle,control,27,pre,24082.66,275,0.0
+DMA_09,Seattle,control,28,pre,19901.18,243,0.0
+DMA_09,Seattle,control,29,pre,18771.94,219,0.0
+DMA_09,Seattle,control,30,pre,19679.53,230,0.0
+DMA_09,Seattle,control,31,pre,21119.31,241,0.0
+DMA_09,Seattle,control,32,pre,23652.52,291,0.0
+DMA_09,Seattle,control,33,pre,25022.64,276,0.0
+DMA_09,Seattle,control,34,pre,23895.39,267,0.0
+DMA_09,Seattle,control,35,pre,20797.75,231,0.0
+DMA_09,Seattle,control,36,pre,19300.97,243,0.0
+DMA_09,Seattle,control,37,pre,19853.0,219,0.0
+DMA_09,Seattle,control,38,pre,21885.23,262,0.0
+DMA_09,Seattle,control,39,pre,23297.53,261,0.0
+DMA_09,Seattle,control,40,pre,25478.8,282,0.0
+DMA_09,Seattle,control,41,pre,24390.8,298,0.0
+DMA_09,Seattle,control,42,pre,19968.31,229,0.0
+DMA_09,Seattle,control,43,pre,19882.66,219,0.0
+DMA_09,Seattle,control,44,pre,20620.85,263,0.0
+DMA_09,Seattle,control,45,pre,21251.8,235,0.0
+DMA_09,Seattle,control,46,pre,23459.37,266,0.0
+DMA_09,Seattle,control,47,pre,25490.03,284,0.0
+DMA_09,Seattle,control,48,pre,24368.97,301,0.0
+DMA_09,Seattle,control,49,pre,20341.03,229,0.0
+DMA_09,Seattle,control,50,pre,19552.71,247,0.0
+DMA_09,Seattle,control,51,pre,20075.93,234,0.0
+DMA_09,Seattle,control,52,pre,21018.62,230,0.0
+DMA_09,Seattle,control,53,pre,23439.51,284,0.0
+DMA_09,Seattle,control,54,pre,25572.61,282,0.0
+DMA_09,Seattle,control,55,pre,24195.17,272,0.0
+DMA_09,Seattle,control,56,pre,20715.63,254,0.0
+DMA_09,Seattle,control,57,pre,19725.49,216,0.0
+DMA_09,Seattle,control,58,pre,20192.82,239,0.0
+DMA_09,Seattle,control,59,pre,21431.02,247,0.0
+DMA_09,Seattle,control,60,post,24035.33,299,0.0
+DMA_09,Seattle,control,61,post,25425.93,311,0.0
+DMA_09,Seattle,control,62,post,25241.93,276,0.0
+DMA_09,Seattle,control,63,post,21206.49,254,0.0
+DMA_09,Seattle,control,64,post,20451.09,232,0.0
+DMA_09,Seattle,control,65,post,20342.93,221,0.0
+DMA_09,Seattle,control,66,post,22035.51,239,0.0
+DMA_09,Seattle,control,67,post,23810.86,293,0.0
+DMA_09,Seattle,control,68,post,26365.91,321,0.0
+DMA_09,Seattle,control,69,post,25427.18,279,0.0
+DMA_09,Seattle,control,70,post,21039.18,258,0.0
+DMA_09,Seattle,control,71,post,20254.58,227,0.0
+DMA_09,Seattle,control,72,post,20852.08,260,0.0
+DMA_09,Seattle,control,73,post,21312.32,247,0.0
+DMA_09,Seattle,control,74,post,23748.65,300,0.0
+DMA_09,Seattle,control,75,post,26437.68,301,0.0
+DMA_09,Seattle,control,76,post,25166.79,277,0.0
+DMA_09,Seattle,control,77,post,22294.98,243,0.0
+DMA_09,Seattle,control,78,post,20451.0,222,0.0
+DMA_09,Seattle,control,79,post,20932.99,251,0.0
+DMA_09,Seattle,control,80,post,22450.57,259,0.0
+DMA_09,Seattle,control,81,post,24569.4,272,0.0
+DMA_09,Seattle,control,82,post,26775.8,316,0.0
+DMA_09,Seattle,control,83,post,25721.34,281,0.0
+DMA_09,Seattle,control,84,post,21686.48,266,0.0
+DMA_09,Seattle,control,85,post,20594.76,237,0.0
+DMA_09,Seattle,control,86,post,21463.11,255,0.0
+DMA_09,Seattle,control,87,post,22779.09,250,0.0
+DMA_09,Seattle,control,88,post,24962.66,306,0.0
+DMA_09,Seattle,control,89,post,26264.27,299,0.0
+DMA_10,San Jose,control,0,pre,18798.78,234,0.0
+DMA_10,San Jose,control,1,pre,17988.63,201,0.0
+DMA_10,San Jose,control,2,pre,18485.95,213,0.0
+DMA_10,San Jose,control,3,pre,18620.79,205,0.0
+DMA_10,San Jose,control,4,pre,21687.58,258,0.0
+DMA_10,San Jose,control,5,pre,22996.74,263,0.0
+DMA_10,San Jose,control,6,pre,22375.11,245,0.0
+DMA_10,San Jose,control,7,pre,18431.87,219,0.0
+DMA_10,San Jose,control,8,pre,18144.9,232,0.0
+DMA_10,San Jose,control,9,pre,19051.87,210,0.0
+DMA_10,San Jose,control,10,pre,19270.2,243,0.0
+DMA_10,San Jose,control,11,pre,21930.53,264,0.0
+DMA_10,San Jose,control,12,pre,22401.01,249,0.0
+DMA_10,San Jose,control,13,pre,22352.98,272,0.0
+DMA_10,San Jose,control,14,pre,18682.7,211,0.0
+DMA_10,San Jose,control,15,pre,17913.87,209,0.0
+DMA_10,San Jose,control,16,pre,18131.0,216,0.0
+DMA_10,San Jose,control,17,pre,19886.74,219,0.0
+DMA_10,San Jose,control,18,pre,21847.28,238,0.0
+DMA_10,San Jose,control,19,pre,23118.22,295,0.0
+DMA_10,San Jose,control,20,pre,23402.24,299,0.0
+DMA_10,San Jose,control,21,pre,18956.21,228,0.0
+DMA_10,San Jose,control,22,pre,18222.08,215,0.0
+DMA_10,San Jose,control,23,pre,18514.03,226,0.0
+DMA_10,San Jose,control,24,pre,19748.28,238,0.0
+DMA_10,San Jose,control,25,pre,22323.65,245,0.0
+DMA_10,San Jose,control,26,pre,23425.52,259,0.0
+DMA_10,San Jose,control,27,pre,22734.96,276,0.0
+DMA_10,San Jose,control,28,pre,19687.41,225,0.0
+DMA_10,San Jose,control,29,pre,18203.72,206,0.0
+DMA_10,San Jose,control,30,pre,18935.35,232,0.0
+DMA_10,San Jose,control,31,pre,19844.11,218,0.0
+DMA_10,San Jose,control,32,pre,22612.75,261,0.0
+DMA_10,San Jose,control,33,pre,23259.84,253,0.0
+DMA_10,San Jose,control,34,pre,23225.45,255,0.0
+DMA_10,San Jose,control,35,pre,19799.51,218,0.0
+DMA_10,San Jose,control,36,pre,18344.82,209,0.0
+DMA_10,San Jose,control,37,pre,19281.98,210,0.0
+DMA_10,San Jose,control,38,pre,19916.49,224,0.0
+DMA_10,San Jose,control,39,pre,21402.43,247,0.0
+DMA_10,San Jose,control,40,pre,23429.0,293,0.0
+DMA_10,San Jose,control,41,pre,23269.86,275,0.0
+DMA_10,San Jose,control,42,pre,19745.85,228,0.0
+DMA_10,San Jose,control,43,pre,19145.62,241,0.0
+DMA_10,San Jose,control,44,pre,18525.4,210,0.0
+DMA_10,San Jose,control,45,pre,20068.1,233,0.0
+DMA_10,San Jose,control,46,pre,22819.8,277,0.0
+DMA_10,San Jose,control,47,pre,24603.12,310,0.0
+DMA_10,San Jose,control,48,pre,22389.75,260,0.0
+DMA_10,San Jose,control,49,pre,19282.17,237,0.0
+DMA_10,San Jose,control,50,pre,18477.4,229,0.0
+DMA_10,San Jose,control,51,pre,18772.09,224,0.0
+DMA_10,San Jose,control,52,pre,20336.78,255,0.0
+DMA_10,San Jose,control,53,pre,22467.77,271,0.0
+DMA_10,San Jose,control,54,pre,23484.21,258,0.0
+DMA_10,San Jose,control,55,pre,23475.6,267,0.0
+DMA_10,San Jose,control,56,pre,19562.27,247,0.0
+DMA_10,San Jose,control,57,pre,18769.62,232,0.0
+DMA_10,San Jose,control,58,pre,19786.85,247,0.0
+DMA_10,San Jose,control,59,pre,20146.11,256,0.0
+DMA_10,San Jose,control,60,post,22383.58,270,0.0
+DMA_10,San Jose,control,61,post,24557.84,287,0.0
+DMA_10,San Jose,control,62,post,22695.31,257,0.0
+DMA_10,San Jose,control,63,post,19573.25,219,0.0
+DMA_10,San Jose,control,64,post,19153.29,218,0.0
+DMA_10,San Jose,control,65,post,19641.12,243,0.0
+DMA_10,San Jose,control,66,post,20169.17,228,0.0
+DMA_10,San Jose,control,67,post,23054.83,290,0.0
+DMA_10,San Jose,control,68,post,23580.1,300,0.0
+DMA_10,San Jose,control,69,post,22998.49,254,0.0
+DMA_10,San Jose,control,70,post,20339.58,232,0.0
+DMA_10,San Jose,control,71,post,19347.0,233,0.0
+DMA_10,San Jose,control,72,post,19174.02,238,0.0
+DMA_10,San Jose,control,73,post,20660.69,250,0.0
+DMA_10,San Jose,control,74,post,23307.36,262,0.0
+DMA_10,San Jose,control,75,post,25320.18,296,0.0
+DMA_10,San Jose,control,76,post,23616.13,259,0.0
+DMA_10,San Jose,control,77,post,20127.17,224,0.0
+DMA_10,San Jose,control,78,post,19288.78,214,0.0
+DMA_10,San Jose,control,79,post,19285.27,218,0.0
+DMA_10,San Jose,control,80,post,20733.34,255,0.0
+DMA_10,San Jose,control,81,post,22287.72,259,0.0
+DMA_10,San Jose,control,82,post,24386.0,280,0.0
+DMA_10,San Jose,control,83,post,23959.47,301,0.0
+DMA_10,San Jose,control,84,post,20146.68,221,0.0
+DMA_10,San Jose,control,85,post,18809.61,216,0.0
+DMA_10,San Jose,control,86,post,20195.06,249,0.0
+DMA_10,San Jose,control,87,post,20806.11,245,0.0
+DMA_10,San Jose,control,88,post,23967.87,306,0.0
+DMA_10,San Jose,control,89,post,25596.25,307,0.0
+DMA_11,Austin,control,0,pre,14095.17,157,0.0
+DMA_11,Austin,control,1,pre,14527.12,164,0.0
+DMA_11,Austin,control,2,pre,14497.19,166,0.0
+DMA_11,Austin,control,3,pre,15298.85,187,0.0
+DMA_11,Austin,control,4,pre,17446.55,220,0.0
+DMA_11,Austin,control,5,pre,18748.98,212,0.0
+DMA_11,Austin,control,6,pre,17422.72,213,0.0
+DMA_11,Austin,control,7,pre,14847.01,163,0.0
+DMA_11,Austin,control,8,pre,14837.58,183,0.0
+DMA_11,Austin,control,9,pre,15063.85,181,0.0
+DMA_11,Austin,control,10,pre,15438.04,172,0.0
+DMA_11,Austin,control,11,pre,17572.6,217,0.0
+DMA_11,Austin,control,12,pre,18381.88,205,0.0
+DMA_11,Austin,control,13,pre,18057.16,206,0.0
+DMA_11,Austin,control,14,pre,15587.56,187,0.0
+DMA_11,Austin,control,15,pre,14907.26,189,0.0
+DMA_11,Austin,control,16,pre,14598.38,160,0.0
+DMA_11,Austin,control,17,pre,15689.57,173,0.0
+DMA_11,Austin,control,18,pre,17431.43,194,0.0
+DMA_11,Austin,control,19,pre,18630.46,225,0.0
+DMA_11,Austin,control,20,pre,18431.83,212,0.0
+DMA_11,Austin,control,21,pre,15466.14,198,0.0
+DMA_11,Austin,control,22,pre,14378.97,161,0.0
+DMA_11,Austin,control,23,pre,15125.2,180,0.0
+DMA_11,Austin,control,24,pre,15406.06,189,0.0
+DMA_11,Austin,control,25,pre,17430.47,217,0.0
+DMA_11,Austin,control,26,pre,19291.75,212,0.0
+DMA_11,Austin,control,27,pre,17550.87,209,0.0
+DMA_11,Austin,control,28,pre,15791.55,179,0.0
+DMA_11,Austin,control,29,pre,14725.63,184,0.0
+DMA_11,Austin,control,30,pre,15271.06,179,0.0
+DMA_11,Austin,control,31,pre,16110.65,189,0.0
+DMA_11,Austin,control,32,pre,17516.82,210,0.0
+DMA_11,Austin,control,33,pre,19386.71,235,0.0
+DMA_11,Austin,control,34,pre,18468.71,225,0.0
+DMA_11,Austin,control,35,pre,15318.01,169,0.0
+DMA_11,Austin,control,36,pre,15525.35,173,0.0
+DMA_11,Austin,control,37,pre,15215.84,185,0.0
+DMA_11,Austin,control,38,pre,16068.45,197,0.0
+DMA_11,Austin,control,39,pre,18470.2,204,0.0
+DMA_11,Austin,control,40,pre,19310.97,239,0.0
+DMA_11,Austin,control,41,pre,19675.86,217,0.0
+DMA_11,Austin,control,42,pre,15986.24,203,0.0
+DMA_11,Austin,control,43,pre,15229.15,191,0.0
+DMA_11,Austin,control,44,pre,15515.5,183,0.0
+DMA_11,Austin,control,45,pre,16738.52,206,0.0
+DMA_11,Austin,control,46,pre,17243.81,195,0.0
+DMA_11,Austin,control,47,pre,19383.39,223,0.0
+DMA_11,Austin,control,48,pre,19119.21,227,0.0
+DMA_11,Austin,control,49,pre,16198.47,197,0.0
+DMA_11,Austin,control,50,pre,15755.54,199,0.0
+DMA_11,Austin,control,51,pre,15568.45,185,0.0
+DMA_11,Austin,control,52,pre,16325.98,208,0.0
+DMA_11,Austin,control,53,pre,18206.84,223,0.0
+DMA_11,Austin,control,54,pre,19542.39,216,0.0
+DMA_11,Austin,control,55,pre,19441.8,225,0.0
+DMA_11,Austin,control,56,pre,15778.81,191,0.0
+DMA_11,Austin,control,57,pre,15852.22,173,0.0
+DMA_11,Austin,control,58,pre,15888.55,196,0.0
+DMA_11,Austin,control,59,pre,17335.78,204,0.0
+DMA_11,Austin,control,60,post,18984.88,222,0.0
+DMA_11,Austin,control,61,post,19937.23,240,0.0
+DMA_11,Austin,control,62,post,19394.37,228,0.0
+DMA_11,Austin,control,63,post,16670.36,196,0.0
+DMA_11,Austin,control,64,post,15539.79,180,0.0
+DMA_11,Austin,control,65,post,16606.43,202,0.0
+DMA_11,Austin,control,66,post,17082.87,207,0.0
+DMA_11,Austin,control,67,post,18609.18,233,0.0
+DMA_11,Austin,control,68,post,20071.08,244,0.0
+DMA_11,Austin,control,69,post,19077.34,217,0.0
+DMA_11,Austin,control,70,post,16830.44,209,0.0
+DMA_11,Austin,control,71,post,15328.97,191,0.0
+DMA_11,Austin,control,72,post,16214.61,205,0.0
+DMA_11,Austin,control,73,post,17431.02,211,0.0
+DMA_11,Austin,control,74,post,18881.45,228,0.0
+DMA_11,Austin,control,75,post,20770.56,252,0.0
+DMA_11,Austin,control,76,post,19028.88,228,0.0
+DMA_11,Austin,control,77,post,17309.79,206,0.0
+DMA_11,Austin,control,78,post,15773.01,195,0.0
+DMA_11,Austin,control,79,post,16209.6,206,0.0
+DMA_11,Austin,control,80,post,17773.58,198,0.0
+DMA_11,Austin,control,81,post,18989.06,242,0.0
+DMA_11,Austin,control,82,post,20733.75,259,0.0
+DMA_11,Austin,control,83,post,19289.11,210,0.0
+DMA_11,Austin,control,84,post,16939.71,212,0.0
+DMA_11,Austin,control,85,post,15694.84,189,0.0
+DMA_11,Austin,control,86,post,16580.54,200,0.0
+DMA_11,Austin,control,87,post,17699.27,214,0.0
+DMA_11,Austin,control,88,post,19418.71,231,0.0
+DMA_11,Austin,control,89,post,21100.83,237,0.0
+DMA_12,Nashville,control,0,pre,12670.46,155,0.0
+DMA_12,Nashville,control,1,pre,12514.36,152,0.0
+DMA_12,Nashville,control,2,pre,13089.06,164,0.0
+DMA_12,Nashville,control,3,pre,13630.49,148,0.0
+DMA_12,Nashville,control,4,pre,14704.19,161,0.0
+DMA_12,Nashville,control,5,pre,16034.56,196,0.0
+DMA_12,Nashville,control,6,pre,15379.43,186,0.0
+DMA_12,Nashville,control,7,pre,12662.99,157,0.0
+DMA_12,Nashville,control,8,pre,12566.39,159,0.0
+DMA_12,Nashville,control,9,pre,12604.69,143,0.0
+DMA_12,Nashville,control,10,pre,13389.43,149,0.0
+DMA_12,Nashville,control,11,pre,14660.99,163,0.0
+DMA_12,Nashville,control,12,pre,16385.24,185,0.0
+DMA_12,Nashville,control,13,pre,15755.66,174,0.0
+DMA_12,Nashville,control,14,pre,12785.56,147,0.0
+DMA_12,Nashville,control,15,pre,12584.67,151,0.0
+DMA_12,Nashville,control,16,pre,12942.11,153,0.0
+DMA_12,Nashville,control,17,pre,13982.76,175,0.0
+DMA_12,Nashville,control,18,pre,15181.03,168,0.0
+DMA_12,Nashville,control,19,pre,16169.1,207,0.0
+DMA_12,Nashville,control,20,pre,15764.05,187,0.0
+DMA_12,Nashville,control,21,pre,13650.9,161,0.0
+DMA_12,Nashville,control,22,pre,13103.99,150,0.0
+DMA_12,Nashville,control,23,pre,12850.5,144,0.0
+DMA_12,Nashville,control,24,pre,13712.6,160,0.0
+DMA_12,Nashville,control,25,pre,15319.65,191,0.0
+DMA_12,Nashville,control,26,pre,16555.34,185,0.0
+DMA_12,Nashville,control,27,pre,15600.73,195,0.0
+DMA_12,Nashville,control,28,pre,13708.45,165,0.0
+DMA_12,Nashville,control,29,pre,12825.72,162,0.0
+DMA_12,Nashville,control,30,pre,13401.94,168,0.0
+DMA_12,Nashville,control,31,pre,13702.87,166,0.0
+DMA_12,Nashville,control,32,pre,15265.96,182,0.0
+DMA_12,Nashville,control,33,pre,16558.64,193,0.0
+DMA_12,Nashville,control,34,pre,16091.64,180,0.0
+DMA_12,Nashville,control,35,pre,13267.14,152,0.0
+DMA_12,Nashville,control,36,pre,13147.97,161,0.0
+DMA_12,Nashville,control,37,pre,13257.55,150,0.0
+DMA_12,Nashville,control,38,pre,13943.24,161,0.0
+DMA_12,Nashville,control,39,pre,15851.91,200,0.0
+DMA_12,Nashville,control,40,pre,16500.63,202,0.0
+DMA_12,Nashville,control,41,pre,15987.85,176,0.0
+DMA_12,Nashville,control,42,pre,13577.37,159,0.0
+DMA_12,Nashville,control,43,pre,12889.05,157,0.0
+DMA_12,Nashville,control,44,pre,13418.09,166,0.0
+DMA_12,Nashville,control,45,pre,14408.06,170,0.0
+DMA_12,Nashville,control,46,pre,15327.34,167,0.0
+DMA_12,Nashville,control,47,pre,16890.35,203,0.0
+DMA_12,Nashville,control,48,pre,16054.16,191,0.0
+DMA_12,Nashville,control,49,pre,14133.74,161,0.0
+DMA_12,Nashville,control,50,pre,13312.84,168,0.0
+DMA_12,Nashville,control,51,pre,13479.63,158,0.0
+DMA_12,Nashville,control,52,pre,14570.21,167,0.0
+DMA_12,Nashville,control,53,pre,15975.52,192,0.0
+DMA_12,Nashville,control,54,pre,16833.44,191,0.0
+DMA_12,Nashville,control,55,pre,16095.21,196,0.0
+DMA_12,Nashville,control,56,pre,13868.65,159,0.0
+DMA_12,Nashville,control,57,pre,12982.93,141,0.0
+DMA_12,Nashville,control,58,pre,13303.28,165,0.0
+DMA_12,Nashville,control,59,pre,14156.95,180,0.0
+DMA_12,Nashville,control,60,post,15611.82,199,0.0
+DMA_12,Nashville,control,61,post,17124.5,194,0.0
+DMA_12,Nashville,control,62,post,16496.21,180,0.0
+DMA_12,Nashville,control,63,post,13707.56,168,0.0
+DMA_12,Nashville,control,64,post,12886.78,157,0.0
+DMA_12,Nashville,control,65,post,13268.72,150,0.0
+DMA_12,Nashville,control,66,post,14385.21,180,0.0
+DMA_12,Nashville,control,67,post,15364.22,170,0.0
+DMA_12,Nashville,control,68,post,17204.54,198,0.0
+DMA_12,Nashville,control,69,post,17069.63,210,0.0
+DMA_12,Nashville,control,70,post,14032.05,153,0.0
+DMA_12,Nashville,control,71,post,13597.35,165,0.0
+DMA_12,Nashville,control,72,post,13735.46,175,0.0
+DMA_12,Nashville,control,73,post,14606.36,183,0.0
+DMA_12,Nashville,control,74,post,15737.87,177,0.0
+DMA_12,Nashville,control,75,post,17261.98,197,0.0
+DMA_12,Nashville,control,76,post,16763.65,195,0.0
+DMA_12,Nashville,control,77,post,13775.1,169,0.0
+DMA_12,Nashville,control,78,post,13224.98,146,0.0
+DMA_12,Nashville,control,79,post,13996.27,167,0.0
+DMA_12,Nashville,control,80,post,15115.88,167,0.0
+DMA_12,Nashville,control,81,post,16073.36,190,0.0
+DMA_12,Nashville,control,82,post,17654.91,223,0.0
+DMA_12,Nashville,control,83,post,17244.53,198,0.0
+DMA_12,Nashville,control,84,post,14162.3,178,0.0
+DMA_12,Nashville,control,85,post,13412.57,155,0.0
+DMA_12,Nashville,control,86,post,14108.95,163,0.0
+DMA_12,Nashville,control,87,post,14845.08,161,0.0
+DMA_12,Nashville,control,88,post,16147.09,188,0.0
+DMA_12,Nashville,control,89,post,17856.85,198,0.0
+DMA_13,Columbus,control,0,pre,11903.58,150,0.0
+DMA_13,Columbus,control,1,pre,11333.97,129,0.0
+DMA_13,Columbus,control,2,pre,11950.44,138,0.0
+DMA_13,Columbus,control,3,pre,12422.9,136,0.0
+DMA_13,Columbus,control,4,pre,14072.5,161,0.0
+DMA_13,Columbus,control,5,pre,14281.07,168,0.0
+DMA_13,Columbus,control,6,pre,13721.36,170,0.0
+DMA_13,Columbus,control,7,pre,12342.27,134,0.0
+DMA_13,Columbus,control,8,pre,11731.87,148,0.0
+DMA_13,Columbus,control,9,pre,12191.2,134,0.0
+DMA_13,Columbus,control,10,pre,12540.89,146,0.0
+DMA_13,Columbus,control,11,pre,14199.61,158,0.0
+DMA_13,Columbus,control,12,pre,14649.39,173,0.0
+DMA_13,Columbus,control,13,pre,14686.9,184,0.0
+DMA_13,Columbus,control,14,pre,12434.5,137,0.0
+DMA_13,Columbus,control,15,pre,11939.8,145,0.0
+DMA_13,Columbus,control,16,pre,11649.64,134,0.0
+DMA_13,Columbus,control,17,pre,12543.25,144,0.0
+DMA_13,Columbus,control,18,pre,14148.19,166,0.0
+DMA_13,Columbus,control,19,pre,15008.48,165,0.0
+DMA_13,Columbus,control,20,pre,14574.55,164,0.0
+DMA_13,Columbus,control,21,pre,12314.3,151,0.0
+DMA_13,Columbus,control,22,pre,11548.57,140,0.0
+DMA_13,Columbus,control,23,pre,12217.87,150,0.0
+DMA_13,Columbus,control,24,pre,12071.3,133,0.0
+DMA_13,Columbus,control,25,pre,14018.77,162,0.0
+DMA_13,Columbus,control,26,pre,15488.39,187,0.0
+DMA_13,Columbus,control,27,pre,14220.16,158,0.0
+DMA_13,Columbus,control,28,pre,12347.72,155,0.0
+DMA_13,Columbus,control,29,pre,11819.01,131,0.0
+DMA_13,Columbus,control,30,pre,12019.19,132,0.0
+DMA_13,Columbus,control,31,pre,12588.32,144,0.0
+DMA_13,Columbus,control,32,pre,13816.6,155,0.0
+DMA_13,Columbus,control,33,pre,15210.97,184,0.0
+DMA_13,Columbus,control,34,pre,14824.69,171,0.0
+DMA_13,Columbus,control,35,pre,12770.81,154,0.0
+DMA_13,Columbus,control,36,pre,11942.79,135,0.0
+DMA_13,Columbus,control,37,pre,12026.2,139,0.0
+DMA_13,Columbus,control,38,pre,13236.64,168,0.0
+DMA_13,Columbus,control,39,pre,14426.94,177,0.0
+DMA_13,Columbus,control,40,pre,15028.6,183,0.0
+DMA_13,Columbus,control,41,pre,14859.04,188,0.0
+DMA_13,Columbus,control,42,pre,12580.02,146,0.0
+DMA_13,Columbus,control,43,pre,12242.48,156,0.0
+DMA_13,Columbus,control,44,pre,12109.52,135,0.0
+DMA_13,Columbus,control,45,pre,13092.86,164,0.0
+DMA_13,Columbus,control,46,pre,14175.51,165,0.0
+DMA_13,Columbus,control,47,pre,15400.69,192,0.0
+DMA_13,Columbus,control,48,pre,14698.4,184,0.0
+DMA_13,Columbus,control,49,pre,12731.41,162,0.0
+DMA_13,Columbus,control,50,pre,12442.43,137,0.0
+DMA_13,Columbus,control,51,pre,12510.02,158,0.0
+DMA_13,Columbus,control,52,pre,12747.64,149,0.0
+DMA_13,Columbus,control,53,pre,14283.61,175,0.0
+DMA_13,Columbus,control,54,pre,14979.81,170,0.0
+DMA_13,Columbus,control,55,pre,14619.85,165,0.0
+DMA_13,Columbus,control,56,pre,12297.71,137,0.0
+DMA_13,Columbus,control,57,pre,12012.06,133,0.0
+DMA_13,Columbus,control,58,pre,12028.68,135,0.0
+DMA_13,Columbus,control,59,pre,13144.16,158,0.0
+DMA_13,Columbus,control,60,post,14405.2,158,0.0
+DMA_13,Columbus,control,61,post,15661.48,186,0.0
+DMA_13,Columbus,control,62,post,14819.12,170,0.0
+DMA_13,Columbus,control,63,post,12867.64,149,0.0
+DMA_13,Columbus,control,64,post,12524.72,140,0.0
+DMA_13,Columbus,control,65,post,12340.92,139,0.0
+DMA_13,Columbus,control,66,post,13296.1,166,0.0
+DMA_13,Columbus,control,67,post,14735.63,165,0.0
+DMA_13,Columbus,control,68,post,15706.54,195,0.0
+DMA_13,Columbus,control,69,post,15341.55,176,0.0
+DMA_13,Columbus,control,70,post,12584.09,141,0.0
+DMA_13,Columbus,control,71,post,12155.71,152,0.0
+DMA_13,Columbus,control,72,post,12310.73,138,0.0
+DMA_13,Columbus,control,73,post,13419.54,171,0.0
+DMA_13,Columbus,control,74,post,14131.22,157,0.0
+DMA_13,Columbus,control,75,post,15885.79,179,0.0
+DMA_13,Columbus,control,76,post,14357.14,181,0.0
+DMA_13,Columbus,control,77,post,12545.57,154,0.0
+DMA_13,Columbus,control,78,post,12236.48,137,0.0
+DMA_13,Columbus,control,79,post,12639.64,137,0.0
+DMA_13,Columbus,control,80,post,13285.0,154,0.0
+DMA_13,Columbus,control,81,post,14486.78,162,0.0
+DMA_13,Columbus,control,82,post,15711.93,175,0.0
+DMA_13,Columbus,control,83,post,15009.7,176,0.0
+DMA_13,Columbus,control,84,post,12938.21,142,0.0
+DMA_13,Columbus,control,85,post,12376.65,140,0.0
+DMA_13,Columbus,control,86,post,12619.02,146,0.0
+DMA_13,Columbus,control,87,post,13144.89,148,0.0
+DMA_13,Columbus,control,88,post,15348.08,192,0.0
+DMA_13,Columbus,control,89,post,16055.72,191,0.0
+DMA_14,Charlotte,control,0,pre,11093.71,130,0.0
+DMA_14,Charlotte,control,1,pre,10468.82,119,0.0
+DMA_14,Charlotte,control,2,pre,11096.67,129,0.0
+DMA_14,Charlotte,control,3,pre,11754.67,137,0.0
+DMA_14,Charlotte,control,4,pre,12749.02,140,0.0
+DMA_14,Charlotte,control,5,pre,13703.53,158,0.0
+DMA_14,Charlotte,control,6,pre,13322.16,164,0.0
+DMA_14,Charlotte,control,7,pre,11183.97,137,0.0
+DMA_14,Charlotte,control,8,pre,10817.96,126,0.0
+DMA_14,Charlotte,control,9,pre,10820.56,132,0.0
+DMA_14,Charlotte,control,10,pre,11879.22,129,0.0
+DMA_14,Charlotte,control,11,pre,13013.83,153,0.0
+DMA_14,Charlotte,control,12,pre,13434.59,150,0.0
+DMA_14,Charlotte,control,13,pre,13206.63,144,0.0
+DMA_14,Charlotte,control,14,pre,11659.1,133,0.0
+DMA_14,Charlotte,control,15,pre,11072.4,131,0.0
+DMA_14,Charlotte,control,16,pre,10952.65,126,0.0
+DMA_14,Charlotte,control,17,pre,11543.79,132,0.0
+DMA_14,Charlotte,control,18,pre,12813.71,141,0.0
+DMA_14,Charlotte,control,19,pre,13929.95,171,0.0
+DMA_14,Charlotte,control,20,pre,13846.45,171,0.0
+DMA_14,Charlotte,control,21,pre,11505.89,135,0.0
+DMA_14,Charlotte,control,22,pre,11070.32,122,0.0
+DMA_14,Charlotte,control,23,pre,10927.97,130,0.0
+DMA_14,Charlotte,control,24,pre,11971.98,138,0.0
+DMA_14,Charlotte,control,25,pre,13238.74,145,0.0
+DMA_14,Charlotte,control,26,pre,14116.52,157,0.0
+DMA_14,Charlotte,control,27,pre,13583.55,152,0.0
+DMA_14,Charlotte,control,28,pre,11504.28,139,0.0
+DMA_14,Charlotte,control,29,pre,11095.78,139,0.0
+DMA_14,Charlotte,control,30,pre,11299.08,135,0.0
+DMA_14,Charlotte,control,31,pre,12293.94,134,0.0
+DMA_14,Charlotte,control,32,pre,13081.35,143,0.0
+DMA_14,Charlotte,control,33,pre,14328.13,170,0.0
+DMA_14,Charlotte,control,34,pre,13782.04,173,0.0
+DMA_14,Charlotte,control,35,pre,11298.09,140,0.0
+DMA_14,Charlotte,control,36,pre,11165.5,137,0.0
+DMA_14,Charlotte,control,37,pre,11426.37,129,0.0
+DMA_14,Charlotte,control,38,pre,12201.61,142,0.0
+DMA_14,Charlotte,control,39,pre,13185.91,153,0.0
+DMA_14,Charlotte,control,40,pre,14082.17,173,0.0
+DMA_14,Charlotte,control,41,pre,13413.23,151,0.0
+DMA_14,Charlotte,control,42,pre,11878.85,137,0.0
+DMA_14,Charlotte,control,43,pre,11255.35,137,0.0
+DMA_14,Charlotte,control,44,pre,11439.15,135,0.0
+DMA_14,Charlotte,control,45,pre,12139.36,136,0.0
+DMA_14,Charlotte,control,46,pre,13500.2,163,0.0
+DMA_14,Charlotte,control,47,pre,14183.54,179,0.0
+DMA_14,Charlotte,control,48,pre,13694.07,157,0.0
+DMA_14,Charlotte,control,49,pre,11839.97,144,0.0
+DMA_14,Charlotte,control,50,pre,11073.4,127,0.0
+DMA_14,Charlotte,control,51,pre,11569.2,143,0.0
+DMA_14,Charlotte,control,52,pre,12371.34,146,0.0
+DMA_14,Charlotte,control,53,pre,13414.35,151,0.0
+DMA_14,Charlotte,control,54,pre,14545.55,181,0.0
+DMA_14,Charlotte,control,55,pre,13713.64,154,0.0
+DMA_14,Charlotte,control,56,pre,11649.42,137,0.0
+DMA_14,Charlotte,control,57,pre,11627.69,144,0.0
+DMA_14,Charlotte,control,58,pre,11720.22,136,0.0
+DMA_14,Charlotte,control,59,pre,12271.26,148,0.0
+DMA_14,Charlotte,control,60,post,13170.91,156,0.0
+DMA_14,Charlotte,control,61,post,14424.01,169,0.0
+DMA_14,Charlotte,control,62,post,14017.1,155,0.0
+DMA_14,Charlotte,control,63,post,12027.78,149,0.0
+DMA_14,Charlotte,control,64,post,11849.03,137,0.0
+DMA_14,Charlotte,control,65,post,11889.06,139,0.0
+DMA_14,Charlotte,control,66,post,12164.61,154,0.0
+DMA_14,Charlotte,control,67,post,13728.21,171,0.0
+DMA_14,Charlotte,control,68,post,14226.57,161,0.0
+DMA_14,Charlotte,control,69,post,14243.87,180,0.0
+DMA_14,Charlotte,control,70,post,12048.59,144,0.0
+DMA_14,Charlotte,control,71,post,11523.23,143,0.0
+DMA_14,Charlotte,control,72,post,11736.09,134,0.0
+DMA_14,Charlotte,control,73,post,12073.18,140,0.0
+DMA_14,Charlotte,control,74,post,13771.31,154,0.0
+DMA_14,Charlotte,control,75,post,14604.84,186,0.0
+DMA_14,Charlotte,control,76,post,13651.66,172,0.0
+DMA_14,Charlotte,control,77,post,11722.84,145,0.0
+DMA_14,Charlotte,control,78,post,11616.44,143,0.0
+DMA_14,Charlotte,control,79,post,12085.74,143,0.0
+DMA_14,Charlotte,control,80,post,12283.32,145,0.0
+DMA_14,Charlotte,control,81,post,13650.57,165,0.0
+DMA_14,Charlotte,control,82,post,15086.94,182,0.0
+DMA_14,Charlotte,control,83,post,13907.6,164,0.0
+DMA_14,Charlotte,control,84,post,11958.47,137,0.0
+DMA_14,Charlotte,control,85,post,11596.02,129,0.0
+DMA_14,Charlotte,control,86,post,11646.68,137,0.0
+DMA_14,Charlotte,control,87,post,12587.84,160,0.0
+DMA_14,Charlotte,control,88,post,13839.6,152,0.0
+DMA_14,Charlotte,control,89,post,15037.02,174,0.0
+DMA_15,Indianapolis,control,0,pre,9785.49,110,0.0
+DMA_15,Indianapolis,control,1,pre,9636.97,111,0.0
+DMA_15,Indianapolis,control,2,pre,9694.37,123,0.0
+DMA_15,Indianapolis,control,3,pre,9981.85,111,0.0
+DMA_15,Indianapolis,control,4,pre,11415.46,145,0.0
+DMA_15,Indianapolis,control,5,pre,12274.12,151,0.0
+DMA_15,Indianapolis,control,6,pre,11005.58,140,0.0
+DMA_15,Indianapolis,control,7,pre,9722.87,117,0.0
+DMA_15,Indianapolis,control,8,pre,9649.22,111,0.0
+DMA_15,Indianapolis,control,9,pre,9806.67,119,0.0
+DMA_15,Indianapolis,control,10,pre,10476.84,125,0.0
+DMA_15,Indianapolis,control,11,pre,11350.96,138,0.0
+DMA_15,Indianapolis,control,12,pre,12172.54,139,0.0
+DMA_15,Indianapolis,control,13,pre,11625.42,131,0.0
+DMA_15,Indianapolis,control,14,pre,10223.89,124,0.0
+DMA_15,Indianapolis,control,15,pre,9631.52,106,0.0
+DMA_15,Indianapolis,control,16,pre,9922.7,116,0.0
+DMA_15,Indianapolis,control,17,pre,10218.98,128,0.0
+DMA_15,Indianapolis,control,18,pre,11272.7,134,0.0
+DMA_15,Indianapolis,control,19,pre,11935.91,131,0.0
+DMA_15,Indianapolis,control,20,pre,11819.78,130,0.0
+DMA_15,Indianapolis,control,21,pre,9790.79,116,0.0
+DMA_15,Indianapolis,control,22,pre,9468.61,111,0.0
+DMA_15,Indianapolis,control,23,pre,9668.37,111,0.0
+DMA_15,Indianapolis,control,24,pre,10410.96,130,0.0
+DMA_15,Indianapolis,control,25,pre,11507.27,127,0.0
+DMA_15,Indianapolis,control,26,pre,12242.81,139,0.0
+DMA_15,Indianapolis,control,27,pre,11914.18,143,0.0
+DMA_15,Indianapolis,control,28,pre,10210.25,127,0.0
+DMA_15,Indianapolis,control,29,pre,9597.0,112,0.0
+DMA_15,Indianapolis,control,30,pre,9968.33,124,0.0
+DMA_15,Indianapolis,control,31,pre,10285.57,113,0.0
+DMA_15,Indianapolis,control,32,pre,11543.82,138,0.0
+DMA_15,Indianapolis,control,33,pre,11971.38,131,0.0
+DMA_15,Indianapolis,control,34,pre,11870.89,146,0.0
+DMA_15,Indianapolis,control,35,pre,9785.89,109,0.0
+DMA_15,Indianapolis,control,36,pre,9609.8,122,0.0
+DMA_15,Indianapolis,control,37,pre,9984.4,109,0.0
+DMA_15,Indianapolis,control,38,pre,10374.99,120,0.0
+DMA_15,Indianapolis,control,39,pre,11893.12,149,0.0
+DMA_15,Indianapolis,control,40,pre,12451.03,158,0.0
+DMA_15,Indianapolis,control,41,pre,11716.06,133,0.0
+DMA_15,Indianapolis,control,42,pre,10139.59,118,0.0
+DMA_15,Indianapolis,control,43,pre,9750.91,109,0.0
+DMA_15,Indianapolis,control,44,pre,9994.65,123,0.0
+DMA_15,Indianapolis,control,45,pre,10731.34,137,0.0
+DMA_15,Indianapolis,control,46,pre,11217.76,138,0.0
+DMA_15,Indianapolis,control,47,pre,12370.02,145,0.0
+DMA_15,Indianapolis,control,48,pre,12018.53,146,0.0
+DMA_15,Indianapolis,control,49,pre,9724.6,112,0.0
+DMA_15,Indianapolis,control,50,pre,9507.17,110,0.0
+DMA_15,Indianapolis,control,51,pre,10046.68,119,0.0
+DMA_15,Indianapolis,control,52,pre,10530.05,124,0.0
+DMA_15,Indianapolis,control,53,pre,11591.57,129,0.0
+DMA_15,Indianapolis,control,54,pre,12552.35,141,0.0
+DMA_15,Indianapolis,control,55,pre,12035.46,150,0.0
+DMA_15,Indianapolis,control,56,pre,10308.75,125,0.0
+DMA_15,Indianapolis,control,57,pre,9556.68,118,0.0
+DMA_15,Indianapolis,control,58,pre,10003.28,117,0.0
+DMA_15,Indianapolis,control,59,pre,10632.73,122,0.0
+DMA_15,Indianapolis,control,60,post,11640.4,128,0.0
+DMA_15,Indianapolis,control,61,post,12406.65,136,0.0
+DMA_15,Indianapolis,control,62,post,12352.34,145,0.0
+DMA_15,Indianapolis,control,63,post,10267.36,111,0.0
+DMA_15,Indianapolis,control,64,post,9933.2,123,0.0
+DMA_15,Indianapolis,control,65,post,10151.52,130,0.0
+DMA_15,Indianapolis,control,66,post,10697.81,116,0.0
+DMA_15,Indianapolis,control,67,post,11743.4,135,0.0
+DMA_15,Indianapolis,control,68,post,12201.17,147,0.0
+DMA_15,Indianapolis,control,69,post,12197.73,136,0.0
+DMA_15,Indianapolis,control,70,post,9938.68,125,0.0
+DMA_15,Indianapolis,control,71,post,9644.35,112,0.0
+DMA_15,Indianapolis,control,72,post,10145.69,128,0.0
+DMA_15,Indianapolis,control,73,post,10682.4,134,0.0
+DMA_15,Indianapolis,control,74,post,11708.79,134,0.0
+DMA_15,Indianapolis,control,75,post,12500.55,136,0.0
+DMA_15,Indianapolis,control,76,post,12246.36,155,0.0
+DMA_15,Indianapolis,control,77,post,10548.26,121,0.0
+DMA_15,Indianapolis,control,78,post,9882.26,110,0.0
+DMA_15,Indianapolis,control,79,post,10166.76,119,0.0
+DMA_15,Indianapolis,control,80,post,11072.46,123,0.0
+DMA_15,Indianapolis,control,81,post,11774.56,129,0.0
+DMA_15,Indianapolis,control,82,post,12546.7,151,0.0
+DMA_15,Indianapolis,control,83,post,12222.02,133,0.0
+DMA_15,Indianapolis,control,84,post,10522.45,131,0.0
+DMA_15,Indianapolis,control,85,post,10152.23,122,0.0
+DMA_15,Indianapolis,control,86,post,10305.69,124,0.0
+DMA_15,Indianapolis,control,87,post,10927.56,122,0.0
+DMA_15,Indianapolis,control,88,post,12012.14,131,0.0
+DMA_15,Indianapolis,control,89,post,12475.47,148,0.0
+DMA_16,Portland,control,0,pre,16232.24,200,0.0
+DMA_16,Portland,control,1,pre,15227.5,180,0.0
+DMA_16,Portland,control,2,pre,15564.67,177,0.0
+DMA_16,Portland,control,3,pre,16555.15,180,0.0
+DMA_16,Portland,control,4,pre,18422.3,200,0.0
+DMA_16,Portland,control,5,pre,19562.36,223,0.0
+DMA_16,Portland,control,6,pre,18488.93,218,0.0
+DMA_16,Portland,control,7,pre,16079.62,182,0.0
+DMA_16,Portland,control,8,pre,15031.17,191,0.0
+DMA_16,Portland,control,9,pre,15517.16,177,0.0
+DMA_16,Portland,control,10,pre,16480.03,182,0.0
+DMA_16,Portland,control,11,pre,18047.54,201,0.0
+DMA_16,Portland,control,12,pre,19863.21,224,0.0
+DMA_16,Portland,control,13,pre,19091.44,243,0.0
+DMA_16,Portland,control,14,pre,15936.3,185,0.0
+DMA_16,Portland,control,15,pre,15353.06,188,0.0
+DMA_16,Portland,control,16,pre,15325.01,171,0.0
+DMA_16,Portland,control,17,pre,16516.81,204,0.0
+DMA_16,Portland,control,18,pre,18200.45,218,0.0
+DMA_16,Portland,control,19,pre,19734.86,228,0.0
+DMA_16,Portland,control,20,pre,19116.41,224,0.0
+DMA_16,Portland,control,21,pre,16396.5,208,0.0
+DMA_16,Portland,control,22,pre,15087.39,182,0.0
+DMA_16,Portland,control,23,pre,15371.35,169,0.0
+DMA_16,Portland,control,24,pre,16321.24,183,0.0
+DMA_16,Portland,control,25,pre,18318.52,204,0.0
+DMA_16,Portland,control,26,pre,20265.34,230,0.0
+DMA_16,Portland,control,27,pre,19037.23,239,0.0
+DMA_16,Portland,control,28,pre,16551.39,198,0.0
+DMA_16,Portland,control,29,pre,15469.96,171,0.0
+DMA_16,Portland,control,30,pre,16525.51,198,0.0
+DMA_16,Portland,control,31,pre,16312.51,188,0.0
+DMA_16,Portland,control,32,pre,19015.31,207,0.0
+DMA_16,Portland,control,33,pre,20060.81,244,0.0
+DMA_16,Portland,control,34,pre,19188.53,218,0.0
+DMA_16,Portland,control,35,pre,16105.04,198,0.0
+DMA_16,Portland,control,36,pre,15814.27,178,0.0
+DMA_16,Portland,control,37,pre,15998.36,175,0.0
+DMA_16,Portland,control,38,pre,16943.66,186,0.0
+DMA_16,Portland,control,39,pre,18442.46,219,0.0
+DMA_16,Portland,control,40,pre,19840.99,243,0.0
+DMA_16,Portland,control,41,pre,19664.99,234,0.0
+DMA_16,Portland,control,42,pre,16802.9,187,0.0
+DMA_16,Portland,control,43,pre,15403.83,185,0.0
+DMA_16,Portland,control,44,pre,15936.46,190,0.0
+DMA_16,Portland,control,45,pre,17360.41,221,0.0
+DMA_16,Portland,control,46,pre,19507.88,247,0.0
+DMA_16,Portland,control,47,pre,20727.39,241,0.0
+DMA_16,Portland,control,48,pre,19628.52,232,0.0
+DMA_16,Portland,control,49,pre,17096.59,196,0.0
+DMA_16,Portland,control,50,pre,16318.82,179,0.0
+DMA_16,Portland,control,51,pre,15816.68,175,0.0
+DMA_16,Portland,control,52,pre,17372.66,211,0.0
+DMA_16,Portland,control,53,pre,19128.35,216,0.0
+DMA_16,Portland,control,54,pre,20508.5,241,0.0
+DMA_16,Portland,control,55,pre,19094.68,242,0.0
+DMA_16,Portland,control,56,pre,16778.69,196,0.0
+DMA_16,Portland,control,57,pre,16821.95,214,0.0
+DMA_16,Portland,control,58,pre,16053.38,181,0.0
+DMA_16,Portland,control,59,pre,16723.53,189,0.0
+DMA_16,Portland,control,60,post,18660.01,212,0.0
+DMA_16,Portland,control,61,post,19971.83,238,0.0
+DMA_16,Portland,control,62,post,19362.55,245,0.0
+DMA_16,Portland,control,63,post,17044.18,194,0.0
+DMA_16,Portland,control,64,post,15953.93,203,0.0
+DMA_16,Portland,control,65,post,16581.21,212,0.0
+DMA_16,Portland,control,66,post,17335.36,192,0.0
+DMA_16,Portland,control,67,post,19129.57,227,0.0
+DMA_16,Portland,control,68,post,20822.44,247,0.0
+DMA_16,Portland,control,69,post,20060.03,224,0.0
+DMA_16,Portland,control,70,post,17393.07,212,0.0
+DMA_16,Portland,control,71,post,16045.12,177,0.0
+DMA_16,Portland,control,72,post,16603.82,180,0.0
+DMA_16,Portland,control,73,post,17352.02,216,0.0
+DMA_16,Portland,control,74,post,19300.17,241,0.0
+DMA_16,Portland,control,75,post,20625.19,235,0.0
+DMA_16,Portland,control,76,post,20370.69,222,0.0
+DMA_16,Portland,control,77,post,17796.17,215,0.0
+DMA_16,Portland,control,78,post,15898.91,180,0.0
+DMA_16,Portland,control,79,post,16026.23,197,0.0
+DMA_16,Portland,control,80,post,17452.24,190,0.0
+DMA_16,Portland,control,81,post,19742.68,216,0.0
+DMA_16,Portland,control,82,post,21394.68,256,0.0
+DMA_16,Portland,control,83,post,20225.67,236,0.0
+DMA_16,Portland,control,84,post,17452.98,193,0.0
+DMA_16,Portland,control,85,post,16708.57,197,0.0
+DMA_16,Portland,control,86,post,17295.85,203,0.0
+DMA_16,Portland,control,87,post,18422.03,209,0.0
+DMA_16,Portland,control,88,post,19626.74,230,0.0
+DMA_16,Portland,control,89,post,21153.18,251,0.0
+DMA_17,San Antonio,control,0,pre,14539.92,174,0.0
+DMA_17,San Antonio,control,1,pre,13502.15,164,0.0
+DMA_17,San Antonio,control,2,pre,13451.65,150,0.0
+DMA_17,San Antonio,control,3,pre,14882.96,167,0.0
+DMA_17,San Antonio,control,4,pre,16078.12,182,0.0
+DMA_17,San Antonio,control,5,pre,16858.68,208,0.0
+DMA_17,San Antonio,control,6,pre,16644.95,188,0.0
+DMA_17,San Antonio,control,7,pre,13597.1,156,0.0
+DMA_17,San Antonio,control,8,pre,13480.25,146,0.0
+DMA_17,San Antonio,control,9,pre,13719.65,168,0.0
+DMA_17,San Antonio,control,10,pre,14932.02,182,0.0
+DMA_17,San Antonio,control,11,pre,16054.38,191,0.0
+DMA_17,San Antonio,control,12,pre,17194.49,188,0.0
+DMA_17,San Antonio,control,13,pre,17322.47,192,0.0
+DMA_17,San Antonio,control,14,pre,14483.38,159,0.0
+DMA_17,San Antonio,control,15,pre,13621.53,170,0.0
+DMA_17,San Antonio,control,16,pre,13912.98,151,0.0
+DMA_17,San Antonio,control,17,pre,14958.4,167,0.0
+DMA_17,San Antonio,control,18,pre,16276.88,180,0.0
+DMA_17,San Antonio,control,19,pre,17096.12,191,0.0
+DMA_17,San Antonio,control,20,pre,16904.47,195,0.0
+DMA_17,San Antonio,control,21,pre,14372.09,181,0.0
+DMA_17,San Antonio,control,22,pre,13311.35,146,0.0
+DMA_17,San Antonio,control,23,pre,13799.23,166,0.0
+DMA_17,San Antonio,control,24,pre,14741.18,171,0.0
+DMA_17,San Antonio,control,25,pre,16513.75,193,0.0
+DMA_17,San Antonio,control,26,pre,17548.51,191,0.0
+DMA_17,San Antonio,control,27,pre,16845.54,195,0.0
+DMA_17,San Antonio,control,28,pre,14568.21,160,0.0
+DMA_17,San Antonio,control,29,pre,14024.64,169,0.0
+DMA_17,San Antonio,control,30,pre,14170.92,160,0.0
+DMA_17,San Antonio,control,31,pre,15275.62,193,0.0
+DMA_17,San Antonio,control,32,pre,16602.43,208,0.0
+DMA_17,San Antonio,control,33,pre,18152.99,213,0.0
+DMA_17,San Antonio,control,34,pre,16662.14,189,0.0
+DMA_17,San Antonio,control,35,pre,14818.78,172,0.0
+DMA_17,San Antonio,control,36,pre,13962.2,177,0.0
+DMA_17,San Antonio,control,37,pre,14291.58,164,0.0
+DMA_17,San Antonio,control,38,pre,14880.5,164,0.0
+DMA_17,San Antonio,control,39,pre,16792.82,186,0.0
+DMA_17,San Antonio,control,40,pre,18321.63,205,0.0
+DMA_17,San Antonio,control,41,pre,17519.96,218,0.0
+DMA_17,San Antonio,control,42,pre,14717.25,177,0.0
+DMA_17,San Antonio,control,43,pre,13913.97,170,0.0
+DMA_17,San Antonio,control,44,pre,14699.28,171,0.0
+DMA_17,San Antonio,control,45,pre,15267.87,194,0.0
+DMA_17,San Antonio,control,46,pre,16986.54,210,0.0
+DMA_17,San Antonio,control,47,pre,17915.65,197,0.0
+DMA_17,San Antonio,control,48,pre,17237.03,197,0.0
+DMA_17,San Antonio,control,49,pre,14321.28,160,0.0
+DMA_17,San Antonio,control,50,pre,14345.8,168,0.0
+DMA_17,San Antonio,control,51,pre,14657.71,177,0.0
+DMA_17,San Antonio,control,52,pre,15450.75,181,0.0
+DMA_17,San Antonio,control,53,pre,16965.02,203,0.0
+DMA_17,San Antonio,control,54,pre,18159.57,231,0.0
+DMA_17,San Antonio,control,55,pre,17954.19,214,0.0
+DMA_17,San Antonio,control,56,pre,14779.21,177,0.0
+DMA_17,San Antonio,control,57,pre,14480.5,159,0.0
+DMA_17,San Antonio,control,58,pre,14528.21,172,0.0
+DMA_17,San Antonio,control,59,pre,14815.4,178,0.0
+DMA_17,San Antonio,control,60,post,17042.03,200,0.0
+DMA_17,San Antonio,control,61,post,18135.93,223,0.0
+DMA_17,San Antonio,control,62,post,17766.65,218,0.0
+DMA_17,San Antonio,control,63,post,15399.38,193,0.0
+DMA_17,San Antonio,control,64,post,14228.95,161,0.0
+DMA_17,San Antonio,control,65,post,15448.27,168,0.0
+DMA_17,San Antonio,control,66,post,15767.0,187,0.0
+DMA_17,San Antonio,control,67,post,16973.41,203,0.0
+DMA_17,San Antonio,control,68,post,18245.98,229,0.0
+DMA_17,San Antonio,control,69,post,17484.11,207,0.0
+DMA_17,San Antonio,control,70,post,14733.35,174,0.0
+DMA_17,San Antonio,control,71,post,14703.37,173,0.0
+DMA_17,San Antonio,control,72,post,15132.03,165,0.0
+DMA_17,San Antonio,control,73,post,16224.05,190,0.0
+DMA_17,San Antonio,control,74,post,17585.56,212,0.0
+DMA_17,San Antonio,control,75,post,19502.54,242,0.0
+DMA_17,San Antonio,control,76,post,17931.72,217,0.0
+DMA_17,San Antonio,control,77,post,15314.48,194,0.0
+DMA_17,San Antonio,control,78,post,14696.74,162,0.0
+DMA_17,San Antonio,control,79,post,15540.78,179,0.0
+DMA_17,San Antonio,control,80,post,16040.57,177,0.0
+DMA_17,San Antonio,control,81,post,17634.48,212,0.0
+DMA_17,San Antonio,control,82,post,18272.57,212,0.0
+DMA_17,San Antonio,control,83,post,18732.15,205,0.0
+DMA_17,San Antonio,control,84,post,15425.04,195,0.0
+DMA_17,San Antonio,control,85,post,14841.18,162,0.0
+DMA_17,San Antonio,control,86,post,15354.62,177,0.0
+DMA_17,San Antonio,control,87,post,16116.83,186,0.0
+DMA_17,San Antonio,control,88,post,18017.72,201,0.0
+DMA_17,San Antonio,control,89,post,18515.34,224,0.0
+DMA_18,Jacksonville,control,0,pre,10622.28,119,0.0
+DMA_18,Jacksonville,control,1,pre,9694.32,111,0.0
+DMA_18,Jacksonville,control,2,pre,10045.15,119,0.0
+DMA_18,Jacksonville,control,3,pre,10353.28,118,0.0
+DMA_18,Jacksonville,control,4,pre,11541.53,144,0.0
+DMA_18,Jacksonville,control,5,pre,12651.06,159,0.0
+DMA_18,Jacksonville,control,6,pre,12170.27,155,0.0
+DMA_18,Jacksonville,control,7,pre,10117.56,113,0.0
+DMA_18,Jacksonville,control,8,pre,10150.12,119,0.0
+DMA_18,Jacksonville,control,9,pre,10176.79,112,0.0
+DMA_18,Jacksonville,control,10,pre,10643.48,130,0.0
+DMA_18,Jacksonville,control,11,pre,12043.11,150,0.0
+DMA_18,Jacksonville,control,12,pre,12767.17,156,0.0
+DMA_18,Jacksonville,control,13,pre,12425.47,140,0.0
+DMA_18,Jacksonville,control,14,pre,10143.44,114,0.0
+DMA_18,Jacksonville,control,15,pre,9756.84,110,0.0
+DMA_18,Jacksonville,control,16,pre,10197.41,119,0.0
+DMA_18,Jacksonville,control,17,pre,10761.74,131,0.0
+DMA_18,Jacksonville,control,18,pre,11494.05,129,0.0
+DMA_18,Jacksonville,control,19,pre,12921.21,162,0.0
+DMA_18,Jacksonville,control,20,pre,12247.85,145,0.0
+DMA_18,Jacksonville,control,21,pre,10388.23,129,0.0
+DMA_18,Jacksonville,control,22,pre,9952.45,111,0.0
+DMA_18,Jacksonville,control,23,pre,10233.74,114,0.0
+DMA_18,Jacksonville,control,24,pre,10816.87,130,0.0
+DMA_18,Jacksonville,control,25,pre,11755.78,143,0.0
+DMA_18,Jacksonville,control,26,pre,12615.05,153,0.0
+DMA_18,Jacksonville,control,27,pre,12552.45,141,0.0
+DMA_18,Jacksonville,control,28,pre,10243.2,115,0.0
+DMA_18,Jacksonville,control,29,pre,9727.06,121,0.0
+DMA_18,Jacksonville,control,30,pre,10052.32,111,0.0
+DMA_18,Jacksonville,control,31,pre,11056.17,127,0.0
+DMA_18,Jacksonville,control,32,pre,11790.72,150,0.0
+DMA_18,Jacksonville,control,33,pre,13040.37,147,0.0
+DMA_18,Jacksonville,control,34,pre,12185.23,140,0.0
+DMA_18,Jacksonville,control,35,pre,10651.38,122,0.0
+DMA_18,Jacksonville,control,36,pre,9979.57,112,0.0
+DMA_18,Jacksonville,control,37,pre,10146.86,119,0.0
+DMA_18,Jacksonville,control,38,pre,10618.89,124,0.0
+DMA_18,Jacksonville,control,39,pre,11701.71,141,0.0
+DMA_18,Jacksonville,control,40,pre,12551.58,148,0.0
+DMA_18,Jacksonville,control,41,pre,12771.32,144,0.0
+DMA_18,Jacksonville,control,42,pre,11035.14,136,0.0
+DMA_18,Jacksonville,control,43,pre,10175.08,126,0.0
+DMA_18,Jacksonville,control,44,pre,10635.92,126,0.0
+DMA_18,Jacksonville,control,45,pre,11103.15,131,0.0
+DMA_18,Jacksonville,control,46,pre,11776.93,128,0.0
+DMA_18,Jacksonville,control,47,pre,12881.4,148,0.0
+DMA_18,Jacksonville,control,48,pre,12279.52,150,0.0
+DMA_18,Jacksonville,control,49,pre,10492.4,127,0.0
+DMA_18,Jacksonville,control,50,pre,10578.11,121,0.0
+DMA_18,Jacksonville,control,51,pre,10693.04,136,0.0
+DMA_18,Jacksonville,control,52,pre,11361.08,125,0.0
+DMA_18,Jacksonville,control,53,pre,12532.32,154,0.0
+DMA_18,Jacksonville,control,54,pre,12874.75,155,0.0
+DMA_18,Jacksonville,control,55,pre,12677.83,151,0.0
+DMA_18,Jacksonville,control,56,pre,10550.82,115,0.0
+DMA_18,Jacksonville,control,57,pre,10407.43,120,0.0
+DMA_18,Jacksonville,control,58,pre,10488.44,121,0.0
+DMA_18,Jacksonville,control,59,pre,10887.11,119,0.0
+DMA_18,Jacksonville,control,60,post,12522.85,142,0.0
+DMA_18,Jacksonville,control,61,post,13488.01,171,0.0
+DMA_18,Jacksonville,control,62,post,12510.13,140,0.0
+DMA_18,Jacksonville,control,63,post,10592.09,131,0.0
+DMA_18,Jacksonville,control,64,post,10207.61,124,0.0
+DMA_18,Jacksonville,control,65,post,10837.38,119,0.0
+DMA_18,Jacksonville,control,66,post,11335.86,127,0.0
+DMA_18,Jacksonville,control,67,post,12139.03,145,0.0
+DMA_18,Jacksonville,control,68,post,12929.37,165,0.0
+DMA_18,Jacksonville,control,69,post,12751.98,147,0.0
+DMA_18,Jacksonville,control,70,post,10745.06,122,0.0
+DMA_18,Jacksonville,control,71,post,10225.11,115,0.0
+DMA_18,Jacksonville,control,72,post,10732.51,129,0.0
+DMA_18,Jacksonville,control,73,post,11199.44,130,0.0
+DMA_18,Jacksonville,control,74,post,12280.7,156,0.0
+DMA_18,Jacksonville,control,75,post,13324.09,163,0.0
+DMA_18,Jacksonville,control,76,post,12721.74,139,0.0
+DMA_18,Jacksonville,control,77,post,10916.1,138,0.0
+DMA_18,Jacksonville,control,78,post,10866.95,123,0.0
+DMA_18,Jacksonville,control,79,post,10684.41,117,0.0
+DMA_18,Jacksonville,control,80,post,11014.88,128,0.0
+DMA_18,Jacksonville,control,81,post,12107.05,148,0.0
+DMA_18,Jacksonville,control,82,post,12898.33,141,0.0
+DMA_18,Jacksonville,control,83,post,13080.0,158,0.0
+DMA_18,Jacksonville,control,84,post,10679.51,116,0.0
+DMA_18,Jacksonville,control,85,post,10771.45,119,0.0
+DMA_18,Jacksonville,control,86,post,10711.24,129,0.0
+DMA_18,Jacksonville,control,87,post,10935.02,125,0.0
+DMA_18,Jacksonville,control,88,post,12234.94,135,0.0
+DMA_18,Jacksonville,control,89,post,13174.74,160,0.0
+DMA_19,Las Vegas,control,0,pre,8923.76,109,0.0
+DMA_19,Las Vegas,control,1,pre,8847.57,110,0.0
+DMA_19,Las Vegas,control,2,pre,8449.68,101,0.0
+DMA_19,Las Vegas,control,3,pre,8966.79,100,0.0
+DMA_19,Las Vegas,control,4,pre,10192.55,123,0.0
+DMA_19,Las Vegas,control,5,pre,10890.53,133,0.0
+DMA_19,Las Vegas,control,6,pre,10158.02,129,0.0
+DMA_19,Las Vegas,control,7,pre,8864.53,102,0.0
+DMA_19,Las Vegas,control,8,pre,8675.27,109,0.0
+DMA_19,Las Vegas,control,9,pre,8515.14,99,0.0
+DMA_19,Las Vegas,control,10,pre,9274.74,105,0.0
+DMA_19,Las Vegas,control,11,pre,10016.99,112,0.0
+DMA_19,Las Vegas,control,12,pre,11026.32,122,0.0
+DMA_19,Las Vegas,control,13,pre,10635.88,119,0.0
+DMA_19,Las Vegas,control,14,pre,9045.26,106,0.0
+DMA_19,Las Vegas,control,15,pre,8527.91,106,0.0
+DMA_19,Las Vegas,control,16,pre,8865.48,105,0.0
+DMA_19,Las Vegas,control,17,pre,9361.71,106,0.0
+DMA_19,Las Vegas,control,18,pre,9992.45,110,0.0
+DMA_19,Las Vegas,control,19,pre,10929.39,121,0.0
+DMA_19,Las Vegas,control,20,pre,10579.9,125,0.0
+DMA_19,Las Vegas,control,21,pre,8891.67,111,0.0
+DMA_19,Las Vegas,control,22,pre,8632.22,99,0.0
+DMA_19,Las Vegas,control,23,pre,8680.71,108,0.0
+DMA_19,Las Vegas,control,24,pre,9420.71,103,0.0
+DMA_19,Las Vegas,control,25,pre,10172.65,130,0.0
+DMA_19,Las Vegas,control,26,pre,11080.71,124,0.0
+DMA_19,Las Vegas,control,27,pre,10831.82,126,0.0
+DMA_19,Las Vegas,control,28,pre,8866.24,101,0.0
+DMA_19,Las Vegas,control,29,pre,8459.77,93,0.0
+DMA_19,Las Vegas,control,30,pre,8820.27,99,0.0
+DMA_19,Las Vegas,control,31,pre,9591.1,119,0.0
+DMA_19,Las Vegas,control,32,pre,10363.7,115,0.0
+DMA_19,Las Vegas,control,33,pre,11037.02,132,0.0
+DMA_19,Las Vegas,control,34,pre,10736.06,135,0.0
+DMA_19,Las Vegas,control,35,pre,9397.94,106,0.0
+DMA_19,Las Vegas,control,36,pre,8606.33,104,0.0
+DMA_19,Las Vegas,control,37,pre,9079.93,99,0.0
+DMA_19,Las Vegas,control,38,pre,9490.08,108,0.0
+DMA_19,Las Vegas,control,39,pre,10447.4,128,0.0
+DMA_19,Las Vegas,control,40,pre,11648.56,148,0.0
+DMA_19,Las Vegas,control,41,pre,11219.89,128,0.0
+DMA_19,Las Vegas,control,42,pre,9227.82,117,0.0
+DMA_19,Las Vegas,control,43,pre,8727.58,98,0.0
+DMA_19,Las Vegas,control,44,pre,9079.37,108,0.0
+DMA_19,Las Vegas,control,45,pre,9603.86,119,0.0
+DMA_19,Las Vegas,control,46,pre,10709.71,122,0.0
+DMA_19,Las Vegas,control,47,pre,11534.88,140,0.0
+DMA_19,Las Vegas,control,48,pre,10907.19,131,0.0
+DMA_19,Las Vegas,control,49,pre,9274.01,109,0.0
+DMA_19,Las Vegas,control,50,pre,8955.64,109,0.0
+DMA_19,Las Vegas,control,51,pre,8833.69,101,0.0
+DMA_19,Las Vegas,control,52,pre,9789.86,121,0.0
+DMA_19,Las Vegas,control,53,pre,10661.99,120,0.0
+DMA_19,Las Vegas,control,54,pre,11058.39,141,0.0
+DMA_19,Las Vegas,control,55,pre,10845.59,122,0.0
+DMA_19,Las Vegas,control,56,pre,9397.57,106,0.0
+DMA_19,Las Vegas,control,57,pre,9024.27,108,0.0
+DMA_19,Las Vegas,control,58,pre,9157.83,115,0.0
+DMA_19,Las Vegas,control,59,pre,9388.34,107,0.0
+DMA_19,Las Vegas,control,60,post,10850.61,119,0.0
+DMA_19,Las Vegas,control,61,post,11557.45,126,0.0
+DMA_19,Las Vegas,control,62,post,11148.18,135,0.0
+DMA_19,Las Vegas,control,63,post,9360.29,106,0.0
+DMA_19,Las Vegas,control,64,post,9068.08,107,0.0
+DMA_19,Las Vegas,control,65,post,9232.26,115,0.0
+DMA_19,Las Vegas,control,66,post,9575.99,115,0.0
+DMA_19,Las Vegas,control,67,post,11162.91,129,0.0
+DMA_19,Las Vegas,control,68,post,11497.65,131,0.0
+DMA_19,Las Vegas,control,69,post,11318.97,128,0.0
+DMA_19,Las Vegas,control,70,post,9800.14,124,0.0
+DMA_19,Las Vegas,control,71,post,9098.62,100,0.0
+DMA_19,Las Vegas,control,72,post,9504.41,113,0.0
+DMA_19,Las Vegas,control,73,post,9605.61,106,0.0
+DMA_19,Las Vegas,control,74,post,10814.42,118,0.0
+DMA_19,Las Vegas,control,75,post,11963.13,134,0.0
+DMA_19,Las Vegas,control,76,post,11471.31,134,0.0
+DMA_19,Las Vegas,control,77,post,9512.93,110,0.0
+DMA_19,Las Vegas,control,78,post,9067.85,98,0.0
+DMA_19,Las Vegas,control,79,post,8947.29,99,0.0
+DMA_19,Las Vegas,control,80,post,9928.59,122,0.0
+DMA_19,Las Vegas,control,81,post,10842.31,134,0.0
+DMA_19,Las Vegas,control,82,post,11787.41,139,0.0
+DMA_19,Las Vegas,control,83,post,11622.62,146,0.0
+DMA_19,Las Vegas,control,84,post,9573.9,105,0.0
+DMA_19,Las Vegas,control,85,post,9068.23,111,0.0
+DMA_19,Las Vegas,control,86,post,9468.67,110,0.0
+DMA_19,Las Vegas,control,87,post,10265.88,112,0.0
+DMA_19,Las Vegas,control,88,post,10908.99,137,0.0
+DMA_19,Las Vegas,control,89,post,11847.51,131,0.0
+DMA_20,Memphis,control,0,pre,7209.99,79,0.0
+DMA_20,Memphis,control,1,pre,7115.84,86,0.0
+DMA_20,Memphis,control,2,pre,7411.7,94,0.0
+DMA_20,Memphis,control,3,pre,7794.71,93,0.0
+DMA_20,Memphis,control,4,pre,8401.02,100,0.0
+DMA_20,Memphis,control,5,pre,9014.18,114,0.0
+DMA_20,Memphis,control,6,pre,8632.56,109,0.0
+DMA_20,Memphis,control,7,pre,7525.64,89,0.0
+DMA_20,Memphis,control,8,pre,7066.16,81,0.0
+DMA_20,Memphis,control,9,pre,7423.25,86,0.0
+DMA_20,Memphis,control,10,pre,7797.28,88,0.0
+DMA_20,Memphis,control,11,pre,8423.06,105,0.0
+DMA_20,Memphis,control,12,pre,9307.92,119,0.0
+DMA_20,Memphis,control,13,pre,9081.81,115,0.0
+DMA_20,Memphis,control,14,pre,7374.35,85,0.0
+DMA_20,Memphis,control,15,pre,7186.63,89,0.0
+DMA_20,Memphis,control,16,pre,7204.6,81,0.0
+DMA_20,Memphis,control,17,pre,7948.44,98,0.0
+DMA_20,Memphis,control,18,pre,8579.92,101,0.0
+DMA_20,Memphis,control,19,pre,9215.17,112,0.0
+DMA_20,Memphis,control,20,pre,8731.7,101,0.0
+DMA_20,Memphis,control,21,pre,7439.34,87,0.0
+DMA_20,Memphis,control,22,pre,7444.7,95,0.0
+DMA_20,Memphis,control,23,pre,7432.66,93,0.0
+DMA_20,Memphis,control,24,pre,7826.61,89,0.0
+DMA_20,Memphis,control,25,pre,8532.41,106,0.0
+DMA_20,Memphis,control,26,pre,9165.39,107,0.0
+DMA_20,Memphis,control,27,pre,9201.54,107,0.0
+DMA_20,Memphis,control,28,pre,7458.56,92,0.0
+DMA_20,Memphis,control,29,pre,7158.01,78,0.0
+DMA_20,Memphis,control,30,pre,7228.92,90,0.0
+DMA_20,Memphis,control,31,pre,7890.97,86,0.0
+DMA_20,Memphis,control,32,pre,8484.15,93,0.0
+DMA_20,Memphis,control,33,pre,9170.93,114,0.0
+DMA_20,Memphis,control,34,pre,8807.84,112,0.0
+DMA_20,Memphis,control,35,pre,7495.43,93,0.0
+DMA_20,Memphis,control,36,pre,7465.08,92,0.0
+DMA_20,Memphis,control,37,pre,7086.63,80,0.0
+DMA_20,Memphis,control,38,pre,8157.56,98,0.0
+DMA_20,Memphis,control,39,pre,8775.81,108,0.0
+DMA_20,Memphis,control,40,pre,9208.74,107,0.0
+DMA_20,Memphis,control,41,pre,9168.25,103,0.0
+DMA_20,Memphis,control,42,pre,7578.27,82,0.0
+DMA_20,Memphis,control,43,pre,7411.37,86,0.0
+DMA_20,Memphis,control,44,pre,7471.54,89,0.0
+DMA_20,Memphis,control,45,pre,7743.27,87,0.0
+DMA_20,Memphis,control,46,pre,8979.92,111,0.0
+DMA_20,Memphis,control,47,pre,9535.15,111,0.0
+DMA_20,Memphis,control,48,pre,9285.6,105,0.0
+DMA_20,Memphis,control,49,pre,7667.77,88,0.0
+DMA_20,Memphis,control,50,pre,7153.03,80,0.0
+DMA_20,Memphis,control,51,pre,7516.86,93,0.0
+DMA_20,Memphis,control,52,pre,7947.1,99,0.0
+DMA_20,Memphis,control,53,pre,8446.92,106,0.0
+DMA_20,Memphis,control,54,pre,9331.07,112,0.0
+DMA_20,Memphis,control,55,pre,9059.89,111,0.0
+DMA_20,Memphis,control,56,pre,7668.38,97,0.0
+DMA_20,Memphis,control,57,pre,7416.28,88,0.0
+DMA_20,Memphis,control,58,pre,7358.7,83,0.0
+DMA_20,Memphis,control,59,pre,7859.01,97,0.0
+DMA_20,Memphis,control,60,post,8777.98,101,0.0
+DMA_20,Memphis,control,61,post,9292.32,109,0.0
+DMA_20,Memphis,control,62,post,9199.93,103,0.0
+DMA_20,Memphis,control,63,post,7713.22,88,0.0
+DMA_20,Memphis,control,64,post,7150.15,88,0.0
+DMA_20,Memphis,control,65,post,7462.74,92,0.0
+DMA_20,Memphis,control,66,post,8239.68,95,0.0
+DMA_20,Memphis,control,67,post,8849.36,98,0.0
+DMA_20,Memphis,control,68,post,9902.87,107,0.0
+DMA_20,Memphis,control,69,post,8779.26,102,0.0
+DMA_20,Memphis,control,70,post,7637.76,84,0.0
+DMA_20,Memphis,control,71,post,7318.72,88,0.0
+DMA_20,Memphis,control,72,post,7559.04,96,0.0
+DMA_20,Memphis,control,73,post,8058.7,89,0.0
+DMA_20,Memphis,control,74,post,8964.65,109,0.0
+DMA_20,Memphis,control,75,post,9506.82,105,0.0
+DMA_20,Memphis,control,76,post,9034.64,112,0.0
+DMA_20,Memphis,control,77,post,7608.61,95,0.0
+DMA_20,Memphis,control,78,post,7414.34,84,0.0
+DMA_20,Memphis,control,79,post,7443.17,91,0.0
+DMA_20,Memphis,control,80,post,7859.48,85,0.0
+DMA_20,Memphis,control,81,post,8920.59,113,0.0
+DMA_20,Memphis,control,82,post,9446.5,107,0.0
+DMA_20,Memphis,control,83,post,9077.24,103,0.0
+DMA_20,Memphis,control,84,post,7788.97,90,0.0
+DMA_20,Memphis,control,85,post,7617.6,91,0.0
+DMA_20,Memphis,control,86,post,7489.82,94,0.0
+DMA_20,Memphis,control,87,post,7988.03,91,0.0
+DMA_20,Memphis,control,88,post,8854.55,101,0.0
+DMA_20,Memphis,control,89,post,9461.66,111,0.0

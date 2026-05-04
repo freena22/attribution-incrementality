@@ -1,0 +1,28 @@
+{
+  "markov_removal_effects": {
+    "Paid Search": 0.25112781954887214,
+    "Paid Social": 0.0334586466165413,
+    "Display": 0.022932330827067648,
+    "Email": 0,
+    "Organic Search": 0.16879699248120292,
+    "Referral": 0
+  },
+  "shapley_values": {
+    "Organic Search": 0.03360764472456824,
+    "Paid Search": 0.029778700161820548,
+    "Email": 0.013894202360431094,
+    "Referral": 0.016790684235744296,
+    "Display": 0.031372195272246564,
+    "Paid Social": 0.03389723258584766
+  },
+  "total_conversions": 2579,
+  "total_revenue": 236149.74,
+  "channels": [
+    "Paid Search",
+    "Paid Social",
+    "Display",
+    "Email",
+    "Organic Search",
+    "Referral"
+  ]
+}
